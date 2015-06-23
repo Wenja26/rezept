@@ -20,15 +20,15 @@
 			 <!--<h3>Cities worldwide</h3>
 			<p>After you enter <strong>at least three characters</strong> the autocomplete function will show all possible matches.</p>  -->
 			<form class="ui-filterable">
-				<input id="autocomplete-input" data-type="search" placeholder="Suche...">
+				<input id="autocomplete-input" data-type="search" placeholder="Rezept suchen...">
 			</form>
-			<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+			<ul id="autocompleteRezeptSuche" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input">
+				<li><a href ="#">
+                        <img src="css/img/goulash.jpg">
+                        <h2>Gulasch</h2>
+                   </a><li>
+			</ul>
 			
-            <div role="main" class="ui-content">
-                <ul data-role="listview" data-inset="true" id="rezeptList">
-                    <!-- Inhalt wird dynamisch befüllt -->
-                </ul>
-            </div>
             
             <div data-role="footer">
                 <div data-role="navbar">

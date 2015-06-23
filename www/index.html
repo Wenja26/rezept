@@ -15,13 +15,22 @@
      
         <div data-role="page" id="uebersicht">
 			<div data-role="header">
-				<h1>Rezept des Tages</h1>
+				<h1>Rezepte des Tages</h1>
 				<a href="#addrezept" data-icon="plus" data-iconpos="notext" class="ui-btn-right" data-transition="slideup"></a>
-				<!-- <a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a> -->
+				<!-- <a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a> -->	
 			</div>
 
 			<div role="main" class="ui-content">
-				<ul data-role="listview" data-inset="true" id="rezeptList">
+			
+				<ul data-role="listview" data-inset="true" id="tagesRezeptList">
+				
+				<li><a href ="#tagesRezept">
+                        <img src="css/img/goulash.jpg">
+                        <h2>Gulasch</h2>
+                    </a><li> 
+					<a href="#rezeptDetails" data-icon="search" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
+			
+				
 					<!-- Inhalt wird dynamisch befüllt -->
 				</ul>
 			</div>
