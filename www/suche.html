@@ -16,9 +16,16 @@
         <div data-role="page" id="uebersicht">
             <div data-role="header">
                 <h1>Suche</h1>
-                <a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
-            </div>
+             </div>
             
+           
+			<h3>Cities worldwide</h3>
+			<p>After you enter <strong>at least three characters</strong> the autocomplete function will show all possible matches.</p>
+			<form class="ui-filterable">
+				<input id="autocomplete-input" data-type="search" placeholder="Suche...">
+			</form>
+			<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+			
             <div role="main" class="ui-content">
                 <ul data-role="listview" data-inset="true" id="rezeptList">
                     <!-- Inhalt wird dynamisch befüllt -->
@@ -29,8 +36,8 @@
                 <div data-role="navbar">
                     <ul>
                         <li><a href="index.html" data-icon="grid">Home</a></li>
-                        <li><a href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
-                        <li><a href="rezept.html" data-icon="gear">Rezept</a></li>
+                        <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
+                        <li><a href="rezept.html" data-icon="gear" class="ui-btn-active">Rezept</a></li>
                         <li><a href="merkzettel.html" data-icon="gear">Merktzettel</a></li>
                     </ul>
                 </div><!-- /navbar -->
