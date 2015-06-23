@@ -12,16 +12,49 @@
         
     </head>
     <body>
-         <div data-role="page" class="ui-responsive-panel" id="index-page">
-             <div data-role="content" class="ui-content ui-content-index">
-                 <section>
-                     <div class="menu-row">
-                         <a class="menu-row-icon menu-row-icon-hasnext" href="merkzettel.html" data-ajax="false">
-                         </a>
-                         
-                     </div>
-                 </section>
-             </div>
-         </div>
+     
+        <div data-role="page" id="uebersicht">
+			<div data-role="header">
+				<h1>Rezepte des Tages</h1>
+				<a href="#addrezept" data-icon="plus" data-iconpos="notext" class="ui-btn-right" data-transition="slideup"></a>
+				<!-- <a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a> -->	
+			</div>
+
+			<div role="main" class="ui-content">
+			
+				<ul data-role="listview" data-inset="true" id="tagesRezeptList">
+				
+				<li><a href ="#tagesRezept">
+                        <img src="css/img/goulash.jpg">
+                        <h2>Gulasch</h2>
+                    </a><li> 
+					<a href="#rezeptDetails" data-icon="search" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
+			
+				<li><a href ="#">
+                        <img src="css/img/sushi.jpg">
+                        <h2>Sushi</h2>
+                    </a><li>
+					<a href="#rezeptDetails" data-icon="search" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
+			
+					
+				
+					<!-- Inhalt wird dynamisch befüllt -->
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+				<div data-role="navbar">
+					<ul>
+
+                        <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                        <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
+                        <li><a href="suche.html" data-icon="search">Suche</a></li>
+
+					</ul>
+				</div><!-- /navbar -->
+		</div><!-- /footer -->
+		</div>
+			
+		 
     </body>
 </html>
