@@ -12,12 +12,29 @@
         
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+     
+        <div data-role="page" id="uebersicht">
+			<div data-role="header">
+				<h1>Rezept des Tages</h1>
+				<a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
+			</div>
+
+			<div role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true" id="rezeptList">
+					<!-- Inhalt wird dynamisch befüllt -->
+				</ul>
+			</div>
+		</div>
+			
+		 <div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="grid">Summary</a></li>
+					<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+    </body>
     </body>
 </html>
