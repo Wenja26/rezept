@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rezeptapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/ios.css" />
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+        
+    </head>
+    <body>
+     
+        <div data-role="page" id="uebersicht">
+			<div data-role="header">
+				<h1>Rezept des Tages</h1>
+				<a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>
+			</div>
+
+			<div role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true" id="rezeptList">
+					<!-- Inhalt wird dynamisch befüllt -->
+				</ul>
+			</div>
+		</div>
+			
+		 <div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="grid">Summary</a></li>
+					<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+					<li><a href="#" data-icon="gear">Setup</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+    </body>
+    </body>
+</html>
