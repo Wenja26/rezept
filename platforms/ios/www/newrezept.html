@@ -23,16 +23,46 @@
       	
 			<div role="main" class="ui-content">
 				
-				 <input type="text" name="rezeptname" placeholder="Projektname" />
+				 <input type="text" name="rezeptname" placeholder="Rezeptname" />
 				 <a href="#" class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left">Bild hochladen</a>		
 		
 		<h3>Zutatenliste:</h3>
 		 <ul data-role="listview" id="listview"  data-inset="true">
-			<li><p id="zutat">Testzutat</p></li>
+			<li>
+				<div data-role="fieldcontain" class="ui-grid-a">	
+					<div class="ui-block-b"> 				
+						<label id="zutat">Testzutat</label>
+					</div>
+					<div class="ui-block-c">  
+						<label id="zutat">Testmenge</label>
+					</div>
+				</div>
+			</li>
 		</u>
-		<input type="text" placeholder="Zutat eingeben..." />
+		
+			<div data-role="fieldcontain" class="ui-grid-a">	
+				<div class="ui-block-b"> 				
+					<input type="text" placeholder="Zutat eingeben..." />
+				</div>
+				<div class="ui-block-c">  
+					<input type="text" placeholder="Menge eingeben..."   />
+					</div>
+					<div class="ui-block-c">  
+					<select name="select-native-2" id="select-native-2"  data-mini="true" width="10px">
+							<option value="1">g</option>
+							<option value="2">kg</option>
+							<option value="3">ml</option>
+							<option value="4">l</option>
+							<option value="5">msp</option>
+							<option value="6">Packung</option>	
+							<option value="7">Stueck</option>							
+					</select>
+					</div>
+					<div class="ui-block-c">  
+					<a href="#" class="ui-btn ui-btn-inline  ui-icon-plus ui-btn-icon-notext ui-corner-all"></a>
+					</div>
+			</div>
 		<a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-left">Letzte Zutat entfernen</a>
-		<a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-right">Neue Zutat hinzufuegen</a> 
 			
 		<h3>Arbeitsschritte:</h3>
 		<ul data-role="listview" id="listview" data-inset="true">
