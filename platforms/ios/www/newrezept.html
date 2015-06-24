@@ -30,16 +30,27 @@
 		 <ul data-role="listview" id="listview"  data-inset="true">
 			<li><p id="zutat">Testzutat</p></li>
 		</u>
-		<input type="text" placeholder="Zutat" />
+		<input type="text" placeholder="Zutat eingeben..." />
 		<a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-left">Letzte Zutat entfernen</a>
 		<a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-right">Neue Zutat hinzufuegen</a> 
 			
 		<h3>Arbeitsschritte:</h3>
 		<ul data-role="listview" id="listview" data-inset="true">
-			<li><p id="zutat">Testarbeitsschritt</p></li>
-			
+			<li>
+				<div data-role="fieldcontain">
+					<label id="zutat">Testarbeitsschritt</label>
+					<select name="select-native-2" id="select-native-2"  data-mini="true">
+						<option value="1">Keine Kategorie</option>
+						<option value="2">Backen</option>
+						<option value="3">Kochen</option>
+						<option value="4">Schneiden</option>
+						<option value="5">Ruehren</option>
+						<option value="6">Wuerzen</option>		
+					</select>
+				</div>
+			</li> 
 		</u>
-		<input type="text" placeholder="Arbeitsschritt" />
+		<input type="text" placeholder="Arbeitsschritt eingeben..." />
 		<a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-left">Letzten Arbeitsschritt entfernen</a>
 		<a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-right">Neuen Arbeitsschritt hinzufuegen</a> 
 		
