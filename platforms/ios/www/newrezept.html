@@ -18,11 +18,29 @@
         <div data-role="page" id="newrezept">
 			<div data-role="header">
 			<h1>Rezept hinzufuegen</h1>		
-			</div>
-
-        
-			
+			</div>	
+		
+      	
 			<div role="main" class="ui-content">
+				
+				 <input type="text" name="rezeptname" placeholder="Projektname" />
+		
+		<h3>Zutatenliste:</h3>
+		 <ul data-role="listview" id="listview"  data-inset="true">
+			<li><input type="text" placeholder="Zutat" /></li>
+			<li><input type="text" placeholder="Zutat" /></li>
+		</u>
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Letzte Zutat entfernen</a>
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-right">Neue Zutat hinzufuegen</a> 
+			
+		<h3>Arbeitsschritte:</h3>
+		<ul data-role="listview" id="listview" data-inset="true">
+			<li><input type="text" placeholder="Arbeitsschritt" /></li>
+		</u>
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Letzten Arbeitsschritt entfernen</a>
+		<a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-right">Neuen Arbeitsschritt hinzufuegen</a> 
+		
+		<h3>Bild hochladen:</h3>		
 				
 			</div>
 			
