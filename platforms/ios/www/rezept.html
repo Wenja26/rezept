@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" href="css/ios.css" />
+        <link rel="stylesheet" href="css/rezept.css" />
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -20,10 +21,31 @@
             </div>
             
             <div role="main" class="ui-content">
-                <ul data-role="listview" data-inset="true" id="rezeptList">
-                    <!-- Inhalt wird dynamisch befüllt -->
+                <h2>Gulasch</h2>
+                <!--Rezeptfoto-->
+                <img src="css/img/goulash.jpg" display="inline" width="100%"/>
+                <p>Zutaten fuer 4 Potionen</p>
+                <div id="plus" class="icons">
+                    <a data-role="button" href="#" data-icon="plus" data-iconpos="notext"></a>
+                </div>
+                <div id="minus" class="icons">
+                    <a data-role="button" href="#" data-icon="minus" data-iconpos="notext"></a>
+                <div>
+                <ul data-role="listview">
+                        <li>1 kg Gulasch</li>
+                        <li>3 EL Butterschmalz</li>
+                        <li>200 g Zwiebeln, klein gewuerfelt</li>
+                        <li>1 Moehre, klein gewuerfelt</li>
+                        <li>1 Stueck Knollensellerie</li>
+                        <li>etwas Tyhmian</li>
+                        <li>evtl. Zucker</li>
+                        <li>evtl. Sahne</li>
+                        <li>Wein, rot, trocken</li>
                 </ul>
+                <a href="#" data-role="button">Anfangen zu kochen...</a>
             </div>
+            
+            
             
             <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
                 <div data-role="navbar">
