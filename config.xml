@@ -8,5 +8,8 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <access origin="*" />
 </widget>
