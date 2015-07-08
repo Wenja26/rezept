@@ -8,7 +8,7 @@ function openDB() {
 
 function createTables(tx) {
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT, Bild TEXT)");
-	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)");
+	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER NOT NULL)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungen (ZubereitungID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zutaten (ZutatID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Name TEXT, Menge INTEGER, Mengeneinheit TEXT)");
 }
@@ -98,3 +98,16 @@ function deleteZutat(id, callback) {
 		tx.executeSql("DELETE FROM Zutaten WHERE ZutatID = ?", [id], callback);
 	});
 }
+
+function merkeRezept(rezeptID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("INSERT INTO Merkliste (RezeptID) VALUES (?)", [rezeptID] , callback);
+	}, errorCB, successCB);
+}
+
+function deleteMarkierung(id, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Merkliste WHERE RezeptID = ?", [id], callback);
+	});
+}
+
