@@ -48,7 +48,7 @@ function readRezepte(callback) {
 
 function readRezept(id, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
+		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p
 						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
 						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
 						WHERE p.RezeptID = ? 
@@ -154,7 +154,10 @@ function deleteMarkierung(id, callback) {
 
 function readMerkliste(callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT * FROM Merkliste ORDER BY Name ASC", [], callback);
+                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m
+                                 LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID
+                                 LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID
+                                 GROUP BY r.ID ORDER BY Name ASC", [], callback);
 	}, errorCB, successCB);
 }
 

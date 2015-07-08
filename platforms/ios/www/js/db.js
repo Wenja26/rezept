@@ -92,16 +92,16 @@ function readZubereitungen(rezeptID, callback) {
 
 
 
-function createZutat(rezeptID, name, menge, callback) {
+function createZutat(rezeptID, name, menge, mengeneinheit callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("INSERT INTO Zutaten (RezeptID, Name, Menge) VALUES (?, ?,?)", [rezeptID, name, menge] , callback);
+		tx.executeSql("INSERT INTO Zutaten (RezeptID, Name, Menge, Mengeneinheit) VALUES (?, ?, ?, ?)", [rezeptID, name, menge, mengeneinheit] , callback);
 	}, errorCB, successCB);
 }
 
 
-function updateZutat(name, menge, zutatID, callback) {
+function updateZutat(name, menge, mengeneinheit, zutatID, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("UPDATE Zutaten SET Name = ?, Menge = ? WHERE ZutatID = ?", [name, menge, zutatID], callback);
+		tx.executeSql("UPDATE Zutaten SET Name = ?, Menge = ?, Mengeneinheit = ? WHERE ZutatID = ?", [name, menge, mengeneinheit, zutatID], callback);
 	});
 }
 

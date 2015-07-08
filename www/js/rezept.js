@@ -30,7 +30,7 @@ function zeigeRezeptAn(rezept) {
                 var rezept = results.rows.item(0);
                 $('#rezeptname').text(rezept.Name);
                 $('#rezeptimage').attr('src',rezept.Bild);
-                fuegeZutatenInListviewEin(Rezept.RezeptID);
+                fuegeZutatenInListviewEin(rezept.RezeptID);
 
 }
 
