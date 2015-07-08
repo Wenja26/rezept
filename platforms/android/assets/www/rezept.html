@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rezeptapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/ios.css" />
+        <link rel="stylesheet" href="css/rezept.css" />
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+        <script src="js/rezept.js" charset="utf-8"></script>	
+		<script src="js/db.js" charset="utf-8"></script>
+
+        
+    </head>
+    <body>
+        
+        <div data-role="page" id="uebersicht">
+            <div data-role="header">
+                <h1>Rezeptdetails</h1>
+            </div>
+            
+            <div role="main" class="ui-content">
+                <h2 id=“rezeptname“>Gulasch</h2>
+                <!--Rezeptfoto-->
+                <img src="" display="inline" width="100%"/>
+               
+                    <p display="inline-block">Zutaten fuer 4 Portionen:</p>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-notext"></a>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-notext" ></a>
+          
+                
+
+                <p> </p>
+                <ul data-role="listview" id="mengeListe">
+                        <li>1 kg Gulasch</li>
+                        <li>3 EL Butterschmalz</li>
+                        <li>200 g Zwiebeln, klein gewuerfelt</li>
+                        <li>1 Moehre, klein gewuerfelt</li>
+                        <li>1 Stueck Knollensellerie</li>
+                        <li>etwas Tyhmian</li>
+                        <li>evtl. Zucker</li>
+                        <li>evtl. Sahne</li>
+                        <li>Wein, rot, trocken</li>
+                </ul>
+                <p></p>
+                <a href="zubereitung.html" data-role="button">Anfangen zu kochen...</a>
+            </div>
+            
+            
+            
+            <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-icon="home">Home</a></li>
+                        <li><a href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
+                        <li><a href="suche.html" data-icon="search">Suche</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div>
+        
+        
+    </body>
+</html>

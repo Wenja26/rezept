@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rezeptapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+        <link rel="stylesheet" href="css/ios.css" />
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+        
+    </head>
+    <body>
+        
+        <div data-role="page" id="uebersicht">
+            <div data-role="header">
+                <h1>Suche</h1>
+             </div>
+			 <form class="ui-filterable">
+				<input id="autocomplete-input" data-type="search" placeholder="Rezept suchen...">
+			</form>
+			<form>
+			<div class="ui-field-contain">
+				<label for="select-native-2">Suche anhand...</label>
+				<select name="select-native-2" id="select-native-2" data-mini="true">
+					<option value="1">Rezeptnamen</option>
+					<option value="2">Zutaten</option>
+				</select>
+			</div>
+			</form>
+			<form>
+			<div class="ui-field-contain">				
+				<label for="select-native-2">Filter nach...</label>
+				<select name="select-native-2" id="select-native-2" data-mini="true">
+					<option value="1">Alle Rezepte</option>
+					<option value="2">Vegetarische Rezepte</option>
+					<option value="3">Vegane Rezepte</option>
+				</select>
+			</div>
+			</form>
+		
+			
+			
+			
+			<ul id="autocompleteRezeptSuche" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input">
+			<!--	<li><a href ="rezept.html">
+                        <img src="css/img/goulash.jpg">
+                        <h2>Gulasch</h2>
+                   </a><li>-->
+			</ul>
+			
+            
+            <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+                <div data-role="navbar">
+                    <ul>
+
+                        <li><a href="index.html" data-icon="home">Home</a></li>
+                        <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
+                        <li><a href="suche.html" data-icon="search" class="ui-btn-active">Suche</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /footer -->
+        </div>
+        
+        
+    </body>
+</html>

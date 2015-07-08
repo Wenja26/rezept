@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rezeptapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/ios.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
+        <script src="js/rezept.js" charset="utf-8"></script>		
+		<script src="js/db.js" charset="utf-8"></script>
+        
+		<script type="text/javascript" 
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="css/jquery.simplyscroll.js"></script>
+		<link rel="stylesheet" href="css/jquery.simplyscroll.css" media="all" 
+			type="text/css">
+		<script type="text/javascript">
+			(function($) {
+				$(function() { //on DOM ready 
+						$("#scroller").simplyScroll({
+							customClass: 'custom',
+							direction: 'backwards',
+							pauseOnHover: false,
+							frameRate: 20,
+							speed: 2
+						});
+				});
+			 })(jQuery);
+		</script>
+    </head>
+    <body>
+     
+        <div data-role="page" id="uebersicht">
+			<div data-role="header">
+			<h1>Home</h1>
+				<a href="newrezept.html" data-icon="plus" data-iconpos="notext" class="ui-btn-right" data-transition="slideup"></a>
+				<!-- <a href="#rezept" data-icon="edit" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a> -->		
+				
+			</div>
+
+			
+			<div role="main" class="ui-content">
+					<a href="#" class="wrapper">
+						<span class="text">
+							Summer is coming!
+						</span>
+						<img src="css/img/cocktail.jpg" height="230" width="100%">
+					</a>
+					
+			<h1>Rezepte des Tages</h1>
+			
+			<!-- 	<ul data-role="listview" data-inset="true" id="tagesRezeptList">-->
+				<ul id="scroller" id="tagesRezeptList">
+					<div class="section">
+						<div class="hp-highlight" 
+							style="background:url(css/img/goulash.jpg) no-repeat 0 0">
+						  <div class="feature-headline">
+							<h1><a href="rezept.html">Gulasch</a></h1>
+							<!-- 			<p>Ein feuriges Gericht...</p> -->
+						  </div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="hp-highlight" 
+							style="background:url(css/img/sushi.jpg) no-repeat 0 0">
+						  <div class="feature-headline">
+							<h1><a href="rezept.html">Sushi</a></h1>
+									<!-- 	<p>Ein asiatische Köstlichkeit...</p>  -->
+						  </div>
+						</div>
+					</div>
+				
+	
+		
+					<!-- Inhalt wird dynamisch befüllt -->
+				</ul>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+				<div data-role="navbar">
+					<ul>
+
+                        <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                        <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
+                        <li><a href="suche.html" data-icon="search">Suche</a></li>
+
+					</ul>
+				</div><!-- /navbar -->
+		</div><!-- /footer -->
+		</div>
+			
+		 
+    </body>
+</html>

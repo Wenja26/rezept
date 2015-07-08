@@ -1,0 +1,119 @@
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    display:block;
+}
+.text {
+    position: absolute;
+    top: 0;
+    color:#f00;
+    background-color:rgba(255,255,255,0.8);
+    width: 150px;
+    height: 100px;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity:1;
+}
+}
+
+img {
+    z-index:1;
+}
+
+
+.custom { /* Applied to container DIV */
+	width: 576px;
+	height: 210px;
+	background-color: #FFF;
+	margin-bottom: 1em;
+}
+
+.custom .simply-scroll-clip { /* Applied to clip DIV */
+	width: 576px;
+	height: 210px;
+}
+
+/* Existing styles */
+#scroller .section {
+	float:left;
+	width: 480px;
+	height: 210px;
+}
+
+#scroller .hp-highlight {
+	height:210px;
+	margin:-10px 10px 10px 0;
+}
+
+#scroller .feature-headline {
+	position:relative;
+	top:140px;
+	width:432px;
+	background:white;
+	margin:10px 10px 20px 10px;
+	padding:10px 10px 0 10px;
+}
+#scroller .feature-headline a {
+	font-weight: bold;
+	text-decoration: none;
+	color:#cc0000;
+}
+
+#scroller h1 {
+	font-weight:normal;
+	font-size:19px;
+}
+
+#scroller p {
+	font-size: 14px !important;
+	color:#666666;
+	line-height:130%;
+	padding:0 0 10px;
+}
+
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+

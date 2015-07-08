@@ -1,0 +1,10 @@
+.icons{
+    display: inline-block;
+    float=left;
+}
+img{
+    max-width:100%;
+    height:auto;
+    position:absolute;
+}
+
