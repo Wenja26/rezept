@@ -7,6 +7,13 @@ function startApp() {
 	
 	$(uebersicht).center();
     
+	$( document ).ready(function() {
+
+    fuegeZutatenhinzu();
+    fuegeRezeptdetails();
+                    
+});
+
 
 	
 }
