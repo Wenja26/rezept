@@ -27,3 +27,22 @@ $( document ).on( "pagecreate", "#myPage", function() {
         }
     });
 });
+
+
+// Rezepte in Listview einfügen
+function fuegeProjekteInListviewEin() {
+    //eine Methode aus der db.js
+    readRezepte(function(tx, results) {
+                //       $("#autocompleteRezeptSuche").empty();
+                var len = results.rows.length;
+                if ( len > 0 ) {
+                for (var i=0; i<len; i++ ) {
+                $("#autocompleteRezeptSuche").append('<li><a href="#projekt" data-projektid="' + results.rows.item(i).ID + '" data-transition="slide">' + results.rows.item(i).Name + '<p>Dauer: ' + results.rows.item(i).Dauer + '</p></a></li>');
+                }
+                }
+                else {
+                $("#autocompleteRezeptSuche").append('<li><h3>Kein Rezept angelegt</h3></li>');
+                }
+                $("#autocompleteRezeptSuche").listview('refresh');
+                });
+}

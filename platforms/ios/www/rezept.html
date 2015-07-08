@@ -10,6 +10,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/scripts.js" charset="utf-8"></script>
+        <script src="js/rezept.js" charset="utf-8"></script>
+
         
     </head>
     <body>
@@ -20,9 +22,9 @@
             </div>
             
             <div role="main" class="ui-content">
-                <h2>Gulasch</h2>
+                <h2 id=“rezeptname“>Gulasch</h2>
                 <!--Rezeptfoto-->
-                <img src="css/img/goulash.jpg" display="inline" width="100%"/>
+                <img src="" display="inline" width="100%"/>
                
                     <p display="inline-block">Zutaten fuer 4 Portionen:</p>
                     <a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-notext"></a>
@@ -31,7 +33,7 @@
                 
 
                 <p> </p>
-                <ul data-role="listview">
+                <ul data-role="listview" id="mengeListe">
                         <li>1 kg Gulasch</li>
                         <li>3 EL Butterschmalz</li>
                         <li>200 g Zwiebeln, klein gewuerfelt</li>

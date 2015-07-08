@@ -6,8 +6,11 @@ function startApp() {
 	//openDB();
 	
 	$(uebersicht).center();
+    
+
 	
 }
+
 
 
 jQuery.fn.center = function () {
