@@ -56,6 +56,12 @@ function deleteRezept(id, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("DELETE FROM Rezepte WHERE RezeptID = ?", [id], callback);
 	});
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Zubereitungen WHERE RezeptID = ?", [id], callback);
+	});
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Zutaten WHERE RezeptID = ?", [id], callback);
+	});
 }
 
 
@@ -74,7 +80,7 @@ function updateZubereitung(details, art, zubereitungID, callback) {
 
 function deleteZubereitung(id, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("DELETE FROM Zubereitungen WHERE zubereitungID = ?", [id], callback);
+		tx.executeSql("DELETE FROM Zubereitungen WHERE ZubereitungID = ?", [id], callback);
 	});
 }
 
