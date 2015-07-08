@@ -3,19 +3,32 @@ document.addEventListener("deviceready", startApp, false);
 
 function startApp() {
 	// Verbindung zur Datenbank öffnen
-	//openDB();
+	openDB();
 	
 	$(uebersicht).center();
     
-	$( document ).ready(function() {
-
+	
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
                     
-});
 
 
 	
+}
+
+
+
+function fuegeZutatenhinzu(){
+    $('#mengeListe').empty();
+    $('#mengeListe').append('<li>1 kg Gulasch </li>');
+    $('#mengeListe').listview('refresh');
+}
+
+function fuegeRezeptdetails(){
+    $('#image').show();
+    $('#image').attr('src', "css/img/goulash.jpg");
+	$('#image').show();
+    $('#rezeptname').text('Gulasch');
 }
 
 
