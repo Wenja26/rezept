@@ -78,6 +78,12 @@ function deleteZubereitung(id, callback) {
 	});
 }
 
+function readZubereitungen(rezeptID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT * FROM Zubereitungen WHERE RezeptID = ? ORDER BY Name ASC", [rezeptID], callback);
+	}, errorCB, successCB);
+}
+
 
 
 function createZutat(rezeptID, name, menge, callback) {
@@ -99,6 +105,13 @@ function deleteZutat(id, callback) {
 	});
 }
 
+function readZutaten(rezeptID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT * FROM Zutaten WHERE RezeptID = ? ORDER BY Name ASC", [rezeptID], callback);
+	}, errorCB, successCB);
+}
+
+
 function merkeRezept(rezeptID, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Merkliste (RezeptID) VALUES (?)", [rezeptID] , callback);
@@ -110,4 +123,11 @@ function deleteMarkierung(id, callback) {
 		tx.executeSql("DELETE FROM Merkliste WHERE RezeptID = ?", [id], callback);
 	});
 }
+
+function readMerkliste(callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT * FROM Merkliste ORDER BY Name ASC", [], callback);
+	}, errorCB, successCB);
+}
+
 
