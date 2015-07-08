@@ -11,6 +11,7 @@ function createTables(tx) {
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER NOT NULL)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungen (ZubereitungID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zutaten (ZutatID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Name TEXT, Menge INTEGER, Mengeneinheit TEXT)");
+	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungsbilder (BildID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,  Art TEXT NOT NULL, Bild TEXT)");
 }
 
 function errorCB(err) {
@@ -135,5 +136,38 @@ function readMerkliste(callback) {
 		tx.executeSql("SELECT * FROM Merkliste ORDER BY Name ASC", [], callback);
 	}, errorCB, successCB);
 }
+
+
+function createZubereitungsbild(bildID, art, bild callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("INSERT INTO Zubereitungsbilder (BildID, Art, Bild) VALUES (?, ?, ?, ?)", [bildID, art, bild] , callback);
+	}, errorCB, successCB);
+}
+
+
+function updateZubereitungsbild(name, bild, bildID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("UPDATE Zubereitungsbilder SET Art = ?, Bild = ? WHERE BildID = ?", [art, bild, bildID], callback);
+	});
+}
+
+function deleteZubereitungsbild(id, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Zubereitungsbilder WHERE BildID = ?", [id], callback);
+	});
+}
+
+function readZubereitungsbild(bildID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT Bild FROM Zubereitungsbilder WHERE BildID = ?", [bildID], callback);
+	}, errorCB, successCB);
+}
+
+function readZubereitungsbild(art, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT z.Bild FROM Zubereitungsbilder z WHERE Art = ? ", [art], callback);
+	}, errorCB, successCB);
+}
+
 
 

@@ -10,13 +10,15 @@ function startApp() {
 	
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
-                    
-
+                   
 
 	
 }
 
-
+function createDefaultData(){
+ createRezept("Gulasch", "css/img/goulash.jpg");
+ createZubereitung()
+}
 
 function fuegeZutatenhinzu(){
     $('#mengeListe').empty();
