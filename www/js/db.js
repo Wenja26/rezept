@@ -9,7 +9,7 @@ function openDB() {
 function createTables(tx) {
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT, Bild TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)");
-	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitung (ZubereitungsID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
+	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungen (ZubereitungID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zutaten (ZutatID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Name TEXT, Menge INTEGER, Mengeneinheit TEXT)");
 }
 
@@ -29,9 +29,10 @@ function createRezept(name, bild, callback) {
 	}, errorCB, successCB);
 }
 
+
 function updateRezept(id, name, bild, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("UPDATE Rezepte SET Name = ?, Bild = ? WHERE ID = ?", [name, bild, id], callback);
+		tx.executeSql("UPDATE Rezepte SET Name = ?, Bild = ? WHERE RezeptID = ?", [name, bild, id], callback);
 	});
 }
 
@@ -53,6 +54,47 @@ function readRezept(id, callback) {
 
 function deleteRezept(id, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("DELETE FROM Rezepte WHERE ID = ?", [id], callback);
+		tx.executeSql("DELETE FROM Rezepte WHERE RezeptID = ?", [id], callback);
+	});
+}
+
+
+function createZubereitung(rezeptID, details, art, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("INSERT INTO Zubereitungen (RezeptID, Details, Art) VALUES (?, ?,?)", [rezeptID, details, art] , callback);
+	}, errorCB, successCB);
+}
+
+
+function updateZubereitung(details, art, zubereitungID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("UPDATE Zubereitungen SET Details = ?, Art = ? WHERE ZubereitungID = ?", [details, art, zubereitungID], callback);
+	});
+}
+
+function deleteZubereitung(id, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Zubereitungen WHERE zubereitungID = ?", [id], callback);
+	});
+}
+
+
+
+function createZutat(rezeptID, name, menge, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("INSERT INTO Zutaten (RezeptID, Name, Menge) VALUES (?, ?,?)", [rezeptID, name, menge] , callback);
+	}, errorCB, successCB);
+}
+
+
+function updateZutat(name, menge, zutatID, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("UPDATE Zutaten SET Name = ?, Menge = ? WHERE ZutatID = ?", [name, menge, zutatID], callback);
+	});
+}
+
+function deleteZutat(id, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("DELETE FROM Zutaten WHERE ZutatID = ?", [id], callback);
 	});
 }
