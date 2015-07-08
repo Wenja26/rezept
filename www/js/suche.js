@@ -29,6 +29,7 @@ $( document ).on( "pagecreate", "#myPage", function() {
 });
 
 
+<<<<<<< HEAD
 // Rezepte in Listview einfügen
 function fuegeProjekteInListviewEin() {
     //eine Methode aus der db.js
@@ -46,3 +47,5 @@ function fuegeProjekteInListviewEin() {
                 $("#autocompleteRezeptSuche").listview('refresh');
                 });
 }
+=======
+>>>>>>> fd81ad180234c042b037ba131a8d082802cbf6f0
