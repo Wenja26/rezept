@@ -7,7 +7,7 @@ function openDB() {
 
 
 function createTables(tx) {
-	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT, Bild TEXT)");
+	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT NOT NULL, Bild TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER NOT NULL)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungen (ZubereitungID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zutaten (ZutatID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Name TEXT, Menge INTEGER, Mengeneinheit TEXT)");
@@ -31,6 +31,7 @@ function createRezept(name, bild, callback) {
 }
 
 
+
 function updateRezept(id, name, bild, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("UPDATE Rezepte SET Name = ?, Bild = ? WHERE RezeptID = ?", [name, bild, id], callback);
@@ -43,6 +44,8 @@ function readRezepte(callback) {
 	}, errorCB, successCB);
 }
 
+
+
 function readRezept(id, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
@@ -50,6 +53,24 @@ function readRezept(id, callback) {
 						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
 						WHERE p.RezeptID = ? 
 						GROUP BY p.ID, p.Name", [id], callback);
+	}, errorCB, successCB);
+}
+
+function readRezept(name, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
+						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
+						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
+						WHERE p.Name = ? 
+						GROUP BY p.ID, p.Name", [name], callback);
+	}, errorCB, successCB);
+}
+
+
+function getIDofRezept(name, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT p.RezeptID FROM Rezepte p 
+						WHERE p.Name = ?", [name], callback);
 	}, errorCB, successCB);
 }
 
@@ -138,14 +159,14 @@ function readMerkliste(callback) {
 }
 
 
-function createZubereitungsbild(bildID, art, bild callback) {
+function createZubereitungsbild(art, bild callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("INSERT INTO Zubereitungsbilder (BildID, Art, Bild) VALUES (?, ?, ?, ?)", [bildID, art, bild] , callback);
+		tx.executeSql("INSERT INTO Zubereitungsbilder (Art, Bild) VALUES (?, ?, ?, ?)", [art, bild] , callback);
 	}, errorCB, successCB);
 }
 
 
-function updateZubereitungsbild(name, bild, bildID, callback) {
+function updateZubereitungsbild(art, bild, bildID, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("UPDATE Zubereitungsbilder SET Art = ?, Bild = ? WHERE BildID = ?", [art, bild, bildID], callback);
 	});

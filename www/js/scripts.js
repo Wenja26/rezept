@@ -16,9 +16,21 @@ function startApp() {
 }
 
 function createDefaultData(){
- createRezept("Gulasch", "css/img/goulash.jpg");
- createZubereitung()
-}
+	var id;
+	 createRezept("Gulasch", "css/img/goulash.jpg", function() {
+			//result.name
+		}););
+	readRezept("Gulasch", function(tx, results) {
+			var len = results.rows.length;
+			if ( len >0 ) {
+			id = results.rows.item(0);
+			}
+		};)
+		}
+	createZutat(id, "Gulasch", "1", "kg" );
+	createZubereitung(id, "Fleisch etwas kleiner schneiden, mit den Gewürzen würzen und anbraten, in der Zwischenzeit Zwiebeln vierteln und mitbraten.", "Schneiden", callback);
+	createZubereitungsbild("Schneiden", "css/img/schneiden.gif", callback);
+ }
 
 function fuegeZutatenhinzu(){
     $('#mengeListe').empty();
