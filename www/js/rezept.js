@@ -2,6 +2,9 @@ var urlParams;
 
 $(document).bind('pagebeforeshow',function(){
     console.log('rezept.js pagebeforeshow triggered');
+
+    openDB();
+
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
@@ -16,7 +19,7 @@ $(document).bind('pagebeforeshow',function(){
     $('#mehr').on('click', mengeErhoehen);
     $('#weniger').on('click', mengeSinken);
     $('#favorisieren').on('click', rezeptmerken);
-}
+});
 
 //id vom Aufruf
 var id;
