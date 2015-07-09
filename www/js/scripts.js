@@ -10,7 +10,7 @@ function startApp() {
 
 	//createDefaultData();
     //  sayHello();             
-	ladeTagesrezepte()
+	ladeTagesrezepte();
 	//$(uebersicht).center();
 	
 		
