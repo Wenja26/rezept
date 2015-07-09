@@ -10,7 +10,7 @@ function startApp() {
 
 	//createDefaultData();
     //  sayHello();             
-	ladeTagesrezepte()
+	ladeTagesrezepte();
 	//$(uebersicht).center();
 	
 		
@@ -93,7 +93,7 @@ function ladeTagesrezepte() {
         else {
             $("#scroller").append('<li><h3>Kein Rezept angelegt</h3><p>Klicken Sie auf das Plus-Symbol oben rechts</p></li>');
         }
-		alert('test1');
+		//alert('test1');
         //$("#scroller").refresh();
 		alert('test2');
 	});
