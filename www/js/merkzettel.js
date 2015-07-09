@@ -1,7 +1,10 @@
-$( document ).on( "pagecreate", "#myPage", function() {
-    fuegeRezepteInMerkzettelEin();
-});
+document.addEventListener("deviceready", onDeviceReady, false);
 
+function onDeviceReady() {
+    alert('onDeviceReady von merkzettel.js ausgeführt');
+    fuegeRezepteInMerkzettelEin();
+
+}
 
 
 function fuegeRezepteInMerkzettelEin() {

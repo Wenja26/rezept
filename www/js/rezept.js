@@ -1,8 +1,14 @@
 document.addEventListener("deviceready", onDeviceReady, true);
 
 function onDeviceReady() {
+
+    alert('onDeviceReady von rezept.js ausgeführt');
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
+
+    var id;
+    zeigeRezeptAn(id);
+    fuegeZutatenInListviewEin(id);
 }
 // device APIs are available
 
@@ -13,8 +19,6 @@ zeigeRezeptAn(id);
 
 
 function fuegeZutatenhinzu(){
-alert('Opened App3!');
-
     $('#mengeliste').empty();
     $('#mengeliste').append('<li>1 kg Gulasch</li>');
     $('#mengeliste').listview('refresh');
@@ -48,8 +52,8 @@ function fuegeZutatenhinzu(){
 */
 
 // Projekt anzeigen
-function zeigeRezeptAn(id) {
-    readRezept(id, function(tx, results) {
+function zeigeRezeptAn(rezeptname) {
+    readRezept(rezeptname, function(tx, results) {
         var rezept = results.rows.item(0);
         $('#rezeptname').text(rezept.Name);
         $('#rezeptimage').attr('src', rezept.Bild);

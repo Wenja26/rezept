@@ -1,10 +1,13 @@
-$( document ).on( "pagecreate", "#myPage", function() {
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+    alert('onDeviceReady von merkzettel.js ausgeführt');
     fuegeRezepteInMerkzettelEin();
-});
+
+}
 
 
-
-function fuegeRezepteInMerkzettelEin(projektid) {
+function fuegeRezepteInMerkzettelEin() {
     readMerkliste(function(tx, results) {
                $("#merkzettelListview").empty();
                var len = results.rows.length;

@@ -2,6 +2,7 @@
 document.addEventListener("deviceready", onDeviceReady, true);
 
 function onDeviceReady() {
+    alert('onDeviceReady von zubereitung.js ausgeführt');
     var id;
     fuegeSchritteInListviewEin(id);
 }

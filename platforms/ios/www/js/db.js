@@ -1,4 +1,4 @@
-yvar db;
+var db;
 
 function openDB() {
 	//alert('opendDatabase 0');
@@ -69,19 +69,14 @@ function readRezeptFromName(name, callback) {
 
 function readRezept(name, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
-						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
-						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
-						WHERE  p.Name = ? 
-						GROUP BY p.ID, p.Name", [name], callback);
+		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID WHERE  p.Name = ? GROUP BY p.ID, p.Name", [name], callback);
 	}, errorCB, successCB);
 }
 
 
 function getIDofRezept(name, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID FROM Rezepte p 
-						WHERE p.Name = ?", [name], callback );
+		tx.executeSql("SELECT p.RezeptID FROM Rezepte p WHERE p.Name = ?", [name], callback );
 	}, errorCB, successCB);
 }
 
@@ -165,10 +160,7 @@ function deleteMarkierung(id, callback) {
 
 function readMerkliste(callback) {
 	db.transaction(function(tx) {
-                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m
-                                 LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID
-                                 LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID
-                                 GROUP BY r.ID ORDER BY Name ASC", [], callback);
+                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID GROUP BY r.ID ORDER BY Name ASC", [], callback);
 	}, errorCB, successCB);
 }
 

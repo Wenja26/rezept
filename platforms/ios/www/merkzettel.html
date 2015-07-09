@@ -11,6 +11,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/scripts.js" charset="utf-8"></script>
+        <script src="js/merkzettel.js" charset="utf-8"></script>
+        <script src="js/rezept.js" charset="utf-8"></script>
         
     </head>
     <body>
@@ -21,13 +23,11 @@
             
             <div role="main" class="ui-content">
                 <ul data-role="listview" id="merkzettelListview" data-filter="true" data-filter-placeholder="Rezept suchen..." data-inset="true">
+                    <!-- standardmäßig angezeigt, wenn die Datenbankabfrage nicht erfolgreiche war-->
                     <li><a href ="#">
                         <img src="css/img/chili.jpg">
                         <h2>Chili Con Carne</h2>
                     </a><li>
-                        
-					<!--<a href="#rezeptDetails" data-icon="search" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>-->
-			
                     <li><a href ="rezept.html">
                         <img src="css/img/goulash.jpg">
                         <h2>Gulasch</h2>
@@ -44,8 +44,6 @@
                             <img src="css/img/gnocchi.JPG">
                             <h2>Gnocchi</h2>
                     </a><li>
-					<!--<a href="#rezeptDetails" data-icon="search" data-iconpos="notext" class="ui-btn-right" data-transition="slide"></a>-->
-			
                 </ul>
             </div>
             
