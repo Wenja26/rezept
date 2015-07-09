@@ -4,7 +4,7 @@ $( document ).on( "pagecreate", "#myPage", function() {
 
 
 
-function fuegeRezepteInMerkzettelEin() {
+function fuegeRezepteInMerkzettelEin(projektid) {
     readMerkliste(function(tx, results) {
                $("#merkzettelListview").empty();
                var len = results.rows.length;

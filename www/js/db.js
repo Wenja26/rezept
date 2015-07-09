@@ -1,11 +1,11 @@
-var db;
+yvar db;
 
 function openDB() {
-	alert('opendDatabase 0');
+	//alert('opendDatabase 0');
 	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000);
-	alert('opendDatabase 1');
+	//alert('opendDatabase 1');
 	db.transaction(createTables, errorCB, successCB);
-	alert('opendDatabase 2');
+	//alert('opendDatabase 2');
 }
 
 
@@ -66,8 +66,7 @@ function readRezeptFromName(name, callback) {
 		tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
 	}, errorCB, successCB);
 }
-/*
-/**
+
 function readRezept(name, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
@@ -85,8 +84,6 @@ function getIDofRezept(name, callback) {
 						WHERE p.Name = ?", [name], callback );
 	}, errorCB, successCB);
 }
-
-/*
 
 function deleteRezept(id, callback) {
 	db.transaction(function(tx) {
@@ -206,7 +203,3 @@ function readZubereitungsbild(art, callback) {
 		tx.executeSql("SELECT z.Bild FROM Zubereitungsbilder z WHERE Art = ? ", [art], callback);
 	}, errorCB, successCB);
 }
-
-
-
-*/

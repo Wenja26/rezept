@@ -1276,3 +1276,381 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 2015-07-08 22:12:15.429 Rezepte[7266:1403199] [CDVTimer][TotalPluginStartup] 53.236008ms
 2015-07-08 22:12:15.520 Rezepte[7266:1403199] Resetting plugins due to page load.
 2015-07-08 22:12:16.505 Rezepte[7266:1403199] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/0CCB72A4-ED86-4880-AA4A-C787F3E4DDEC/Rezepte.app/www/index.html
+2015-07-09 07:30:20.563 Rezepte[8814:1854719] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/23D51651-5011-4295-896D-39ACD99F61D6/Library/Cookies/Cookies.binarycookies
+2015-07-09 07:30:20.931 Rezepte[8814:1854719] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 07:30:20.932 Rezepte[8814:1854719] Multi-tasking -> Device: YES, App: YES
+2015-07-09 07:30:20.950 Rezepte[8814:1854719] Unlimited access to network resources
+2015-07-09 07:30:20.966 Rezepte[8814:1854719] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 07:30:21.569 Rezepte[8814:1854719] [CDVTimer][statusbar] 201.588035ms
+2015-07-09 07:30:21.569 Rezepte[8814:1854719] [CDVTimer][TotalPluginStartup] 201.822996ms
+2015-07-09 07:30:21.759 Rezepte[8814:1854719] Resetting plugins due to page load.
+2015-07-09 08:11:07.166 Rezepte[8814:1854833] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-09 08:12:28.132 Rezepte[8814:1854833] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-09 08:14:07.376 Rezepte[8814:1854833] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-09 08:15:49.267 Rezepte[8814:1854833] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-09 08:19:03.389 Rezepte[9267:1939129] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/FF2133BC-D435-4233-A2D5-57A512076449/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:19:03.501 Rezepte[9267:1939129] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:19:03.501 Rezepte[9267:1939129] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:19:03.504 Rezepte[9267:1939129] Unlimited access to network resources
+2015-07-09 08:19:03.508 Rezepte[9267:1939129] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:19:03.666 Rezepte[9267:1939129] [CDVTimer][statusbar] 41.467011ms
+2015-07-09 08:19:03.666 Rezepte[9267:1939129] [CDVTimer][TotalPluginStartup] 41.680992ms
+2015-07-09 08:19:03.801 Rezepte[9267:1939129] Resetting plugins due to page load.
+2015-07-09 08:19:04.073 Rezepte[9267:1939129] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/6E6B2971-EB01-4B79-B249-B04C7F718023/Rezepte.app/www/index.html
+2015-07-09 08:19:22.216 Rezepte[9267:1939129] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:22.216 Rezepte[9267:1939129] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:28.209 Rezepte[9267:1939129] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:28.210 Rezepte[9267:1939129] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:34.049 Rezepte[9267:1939129] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:34.049 Rezepte[9267:1939129] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:35.676 Rezepte[9267:1939129] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:35.676 Rezepte[9267:1939129] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:46.300 Rezepte[9267:1939129] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:46.300 Rezepte[9267:1939129] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:19:54.890 Rezepte[9398:1944504] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/84C8F540-B1B1-4111-9043-EB39EC4AF92F/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:19:54.986 Rezepte[9398:1944504] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:19:54.986 Rezepte[9398:1944504] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:19:54.988 Rezepte[9398:1944504] Unlimited access to network resources
+2015-07-09 08:19:54.992 Rezepte[9398:1944504] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:19:55.131 Rezepte[9398:1944504] [CDVTimer][statusbar] 21.351993ms
+2015-07-09 08:19:55.132 Rezepte[9398:1944504] [CDVTimer][TotalPluginStartup] 21.588981ms
+2015-07-09 08:19:55.225 Rezepte[9398:1944504] Resetting plugins due to page load.
+2015-07-09 08:19:55.468 Rezepte[9398:1944504] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/F0711374-1108-4695-B30A-BB61AEDCDE52/Rezepte.app/www/index.html
+2015-07-09 08:20:10.856 Rezepte[9398:1944504] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:20:10.856 Rezepte[9398:1944504] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:20:12.354 Rezepte[9398:1944504] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:20:12.355 Rezepte[9398:1944504] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:21:05.687 Rezepte[9530:1948545] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/069490B2-6BED-40D1-B3C8-7ED8639F4FBF/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:21:05.797 Rezepte[9530:1948545] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:21:05.798 Rezepte[9530:1948545] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:21:05.800 Rezepte[9530:1948545] Unlimited access to network resources
+2015-07-09 08:21:05.803 Rezepte[9530:1948545] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:21:05.970 Rezepte[9530:1948545] [CDVTimer][statusbar] 36.181986ms
+2015-07-09 08:21:05.970 Rezepte[9530:1948545] [CDVTimer][TotalPluginStartup] 36.427975ms
+2015-07-09 08:21:06.080 Rezepte[9530:1948545] Resetting plugins due to page load.
+2015-07-09 08:21:06.343 Rezepte[9530:1948545] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/A9A804BC-81F8-4AA9-928D-09E220B33D2B/Rezepte.app/www/index.html
+2015-07-09 08:22:04.688 Rezepte[9530:1948545] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:22:04.688 Rezepte[9530:1948545] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:22:07.458 Rezepte[9530:1948545] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:22:07.458 Rezepte[9530:1948545] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:22.092 Rezepte[9796:1982671] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/7BA10D49-F496-4438-B152-022F7838B681/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:28:22.220 Rezepte[9796:1982671] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:28:22.220 Rezepte[9796:1982671] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:28:22.223 Rezepte[9796:1982671] Unlimited access to network resources
+2015-07-09 08:28:22.227 Rezepte[9796:1982671] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:28:22.398 Rezepte[9796:1982671] [CDVTimer][statusbar] 37.624002ms
+2015-07-09 08:28:22.398 Rezepte[9796:1982671] [CDVTimer][TotalPluginStartup] 37.845016ms
+2015-07-09 08:28:22.523 Rezepte[9796:1982671] Resetting plugins due to page load.
+2015-07-09 08:28:22.826 Rezepte[9796:1982671] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/CCAFD7CF-7914-4BF1-B566-FE43278D8433/Rezepte.app/www/index.html
+2015-07-09 08:28:39.758 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:39.758 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:42.124 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:42.125 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:45.526 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:45.526 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:47.122 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:47.122 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:48.376 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:28:48.376 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:29:03.722 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:29:03.723 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:29:54.122 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:29:54.123 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:30:00.646 Rezepte[9796:1982671] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:30:00.646 Rezepte[9796:1982671] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:32:49.853 Rezepte[9943:2009028] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/07EB305D-E072-4041-ABC2-C8AF3D4E1C06/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:32:49.968 Rezepte[9943:2009028] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:32:49.968 Rezepte[9943:2009028] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:32:49.970 Rezepte[9943:2009028] Unlimited access to network resources
+2015-07-09 08:32:49.974 Rezepte[9943:2009028] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:32:50.137 Rezepte[9943:2009028] [CDVTimer][statusbar] 36.394000ms
+2015-07-09 08:32:50.137 Rezepte[9943:2009028] [CDVTimer][TotalPluginStartup] 36.678016ms
+2015-07-09 08:32:50.244 Rezepte[9943:2009028] Resetting plugins due to page load.
+2015-07-09 08:32:50.532 Rezepte[9943:2009028] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/C691563F-5428-4E18-932A-EA4F9544F12E/Rezepte.app/www/index.html
+2015-07-09 08:33:00.137 Rezepte[10084:2009851] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/4E4AEBF2-1E1E-44D9-AF65-00C0BD5E6244/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:33:00.321 Rezepte[10084:2009851] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:33:00.321 Rezepte[10084:2009851] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:33:00.324 Rezepte[10084:2009851] Unlimited access to network resources
+2015-07-09 08:33:00.327 Rezepte[10084:2009851] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:33:00.471 Rezepte[10084:2009851] [CDVTimer][statusbar] 23.451984ms
+2015-07-09 08:33:00.472 Rezepte[10084:2009851] [CDVTimer][TotalPluginStartup] 23.647964ms
+2015-07-09 08:33:00.617 Rezepte[10084:2009851] Resetting plugins due to page load.
+2015-07-09 08:33:00.851 Rezepte[10084:2009851] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/5D20F0FE-84D3-40D3-AF29-3C245AB1C23E/Rezepte.app/www/index.html
+2015-07-09 08:34:12.894 Rezepte[10084:2009851] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:34:12.895 Rezepte[10084:2009851] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:34:15.062 Rezepte[10084:2009851] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:34:15.062 Rezepte[10084:2009851] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:35:03.411 Rezepte[10222:2023770] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/570E7A29-8BE8-436C-B402-2688C3662A38/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:35:03.537 Rezepte[10222:2023770] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:35:03.537 Rezepte[10222:2023770] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:35:03.540 Rezepte[10222:2023770] Unlimited access to network resources
+2015-07-09 08:35:03.544 Rezepte[10222:2023770] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:35:03.695 Rezepte[10222:2023770] [CDVTimer][statusbar] 28.858006ms
+2015-07-09 08:35:03.695 Rezepte[10222:2023770] [CDVTimer][TotalPluginStartup] 29.054999ms
+2015-07-09 08:35:03.809 Rezepte[10222:2023770] Resetting plugins due to page load.
+2015-07-09 08:35:04.073 Rezepte[10222:2023770] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/D0DD3317-28D3-4487-8797-BFFFBF29B9CD/Rezepte.app/www/index.html
+2015-07-09 08:40:50.868 Rezepte[10222:2023770] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:40:50.869 Rezepte[10222:2023770] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:40:52.700 Rezepte[10222:2023770] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:40:52.700 Rezepte[10222:2023770] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:44:45.013 Rezepte[10391:2082312] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/1F93AA73-FE34-40C2-92BB-91EE2B61C785/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:44:45.136 Rezepte[10391:2082312] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:44:45.137 Rezepte[10391:2082312] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:44:45.139 Rezepte[10391:2082312] Unlimited access to network resources
+2015-07-09 08:44:45.143 Rezepte[10391:2082312] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:44:45.326 Rezepte[10391:2082312] [CDVTimer][statusbar] 51.213980ms
+2015-07-09 08:44:45.326 Rezepte[10391:2082312] [CDVTimer][TotalPluginStartup] 51.433980ms
+2015-07-09 08:44:45.441 Rezepte[10391:2082312] Resetting plugins due to page load.
+2015-07-09 08:44:45.736 Rezepte[10391:2082312] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/E79A9A7F-3B07-44CA-BE59-75652B1D7EB6/Rezepte.app/www/index.html
+2015-07-09 08:48:33.228 Rezepte[10559:2109053] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/7C63F8B3-4E96-4C6C-9064-963944308E88/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:48:33.355 Rezepte[10559:2109053] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:48:33.355 Rezepte[10559:2109053] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:48:33.357 Rezepte[10559:2109053] Unlimited access to network resources
+2015-07-09 08:48:33.361 Rezepte[10559:2109053] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:48:33.521 Rezepte[10559:2109053] [CDVTimer][statusbar] 31.085014ms
+2015-07-09 08:48:33.521 Rezepte[10559:2109053] [CDVTimer][TotalPluginStartup] 31.403005ms
+2015-07-09 08:48:33.639 Rezepte[10559:2109053] Resetting plugins due to page load.
+2015-07-09 08:48:33.907 Rezepte[10559:2109053] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/99A4438F-CD90-48F8-AB2A-382DAA30FEDC/Rezepte.app/www/index.html
+2015-07-09 08:49:59.695 Rezepte[10559:2109053] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:49:59.696 Rezepte[10559:2109053] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:05.112 Rezepte[10559:2109053] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:05.112 Rezepte[10559:2109053] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:16.627 Rezepte[10559:2109053] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:16.627 Rezepte[10559:2109053] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:19.620 Rezepte[10559:2109053] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:19.620 Rezepte[10559:2109053] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:50:36.342 Rezepte[10559:2109053] Resetting plugins due to page load.
+2015-07-09 08:50:36.938 Rezepte[10559:2109053] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/99A4438F-CD90-48F8-AB2A-382DAA30FEDC/Rezepte.app/www/rezept.html
+2015-07-09 08:50:40.401 Rezepte[10559:2109053] Resetting plugins due to page load.
+2015-07-09 08:50:40.897 Rezepte[10559:2109053] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/99A4438F-CD90-48F8-AB2A-382DAA30FEDC/Rezepte.app/www/rezept.html
+2015-07-09 08:52:13.467 Rezepte[10693:2133753] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/B67BE700-A37B-4306-BC97-26EF78F9399E/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:52:13.582 Rezepte[10693:2133753] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:52:13.583 Rezepte[10693:2133753] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:52:13.585 Rezepte[10693:2133753] Unlimited access to network resources
+2015-07-09 08:52:13.588 Rezepte[10693:2133753] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:52:13.759 Rezepte[10693:2133753] [CDVTimer][statusbar] 31.544983ms
+2015-07-09 08:52:13.759 Rezepte[10693:2133753] [CDVTimer][TotalPluginStartup] 31.812012ms
+2015-07-09 08:52:13.872 Rezepte[10693:2133753] Resetting plugins due to page load.
+2015-07-09 08:52:14.153 Rezepte[10693:2133753] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/0F4191BB-8FFF-4F03-8C9F-B44E431D1D27/Rezepte.app/www/index.html
+2015-07-09 08:58:31.798 Rezepte[10843:2170758] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/19D279D9-67C8-4B44-81E4-5D57B9F4EAE8/Library/Cookies/Cookies.binarycookies
+2015-07-09 08:58:31.994 Rezepte[10843:2170758] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 08:58:31.994 Rezepte[10843:2170758] Multi-tasking -> Device: YES, App: YES
+2015-07-09 08:58:31.999 Rezepte[10843:2170758] Unlimited access to network resources
+2015-07-09 08:58:32.003 Rezepte[10843:2170758] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 08:58:32.177 Rezepte[10843:2170758] [CDVTimer][statusbar] 35.022020ms
+2015-07-09 08:58:32.177 Rezepte[10843:2170758] [CDVTimer][TotalPluginStartup] 35.310984ms
+2015-07-09 08:58:32.299 Rezepte[10843:2170758] Resetting plugins due to page load.
+2015-07-09 08:58:32.630 Rezepte[10843:2170758] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/A36F20EC-F80A-45E6-82C1-D9C22310549C/Rezepte.app/www/index.html
+2015-07-09 08:58:52.554 Rezepte[10843:2170758] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 08:58:52.555 Rezepte[10843:2170758] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:00:43.470 Rezepte[10843:2170758] Resetting plugins due to page load.
+2015-07-09 09:00:44.063 Rezepte[10843:2170758] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/A36F20EC-F80A-45E6-82C1-D9C22310549C/Rezepte.app/www/rezept.html
+2015-07-09 09:00:58.973 Rezepte[10843:2170758] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:00:58.974 Rezepte[10843:2170758] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:01:11.542 Rezepte[10843:2170758] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:01:11.543 Rezepte[10843:2170758] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:01:11.544 Rezepte[10843:2170758] Resetting plugins due to page load.
+2015-07-09 09:01:12.083 Rezepte[10843:2170758] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/A36F20EC-F80A-45E6-82C1-D9C22310549C/Rezepte.app/www/rezept.html
+2015-07-09 09:01:35.535 Rezepte[10843:2170758] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:01:35.536 Rezepte[10843:2170758] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:03:25.601 Rezepte[10975:2204118] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/318E6DAC-0633-4554-97AA-56CA5B05E0F9/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:03:25.725 Rezepte[10975:2204118] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:03:25.725 Rezepte[10975:2204118] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:03:25.733 Rezepte[10975:2204118] Unlimited access to network resources
+2015-07-09 09:03:25.737 Rezepte[10975:2204118] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:03:25.897 Rezepte[10975:2204118] [CDVTimer][statusbar] 28.957009ms
+2015-07-09 09:03:25.897 Rezepte[10975:2204118] [CDVTimer][TotalPluginStartup] 29.159009ms
+2015-07-09 09:03:26.006 Rezepte[10975:2204118] Resetting plugins due to page load.
+2015-07-09 09:03:26.276 Rezepte[10975:2204118] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/57DACF04-6321-4314-A0AA-BD9F9F271BCD/Rezepte.app/www/index.html
+2015-07-09 09:16:47.165 Rezepte[11158:2251396] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/247DEB47-569B-47B4-A957-B21AB97F4E6E/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:16:47.306 Rezepte[11158:2251396] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:16:47.307 Rezepte[11158:2251396] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:16:47.310 Rezepte[11158:2251396] Unlimited access to network resources
+2015-07-09 09:16:47.314 Rezepte[11158:2251396] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:16:47.474 Rezepte[11158:2251396] [CDVTimer][statusbar] 28.020024ms
+2015-07-09 09:16:47.475 Rezepte[11158:2251396] [CDVTimer][TotalPluginStartup] 28.237998ms
+2015-07-09 09:16:47.626 Rezepte[11158:2251396] Resetting plugins due to page load.
+2015-07-09 09:16:47.944 Rezepte[11158:2251396] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/B54FE08A-3032-4FC7-B43C-3F27A640007A/Rezepte.app/www/index.html
+2015-07-09 09:16:58.047 Rezepte[11158:2251396] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:16:58.047 Rezepte[11158:2251396] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:25:03.209 Rezepte[11158:2251396] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:25:03.210 Rezepte[11158:2251396] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:25:05.073 Rezepte[11158:2251396] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:25:05.073 Rezepte[11158:2251396] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:33:57.611 Rezepte[11369:2319703] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/EB08B10B-F95B-4072-AEDC-AA5EBB6C8F88/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:33:57.725 Rezepte[11369:2319703] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:33:57.726 Rezepte[11369:2319703] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:33:57.728 Rezepte[11369:2319703] Unlimited access to network resources
+2015-07-09 09:33:57.732 Rezepte[11369:2319703] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:33:57.886 Rezepte[11369:2319703] [CDVTimer][statusbar] 27.056992ms
+2015-07-09 09:33:57.886 Rezepte[11369:2319703] [CDVTimer][TotalPluginStartup] 27.238965ms
+2015-07-09 09:33:58.000 Rezepte[11369:2319703] Resetting plugins due to page load.
+2015-07-09 09:33:58.297 Rezepte[11369:2319703] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/F45C7D3A-3844-4517-A4DF-E049F3B9FA71/Rezepte.app/www/index.html
+2015-07-09 09:34:14.747 Rezepte[11369:2319703] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:34:14.747 Rezepte[11369:2319703] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:42:18.555 Rezepte[11518:2359296] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/F2AD6B53-3274-41C3-818B-6219C6CC7E40/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:42:18.732 Rezepte[11518:2359296] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:42:18.733 Rezepte[11518:2359296] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:42:18.735 Rezepte[11518:2359296] Unlimited access to network resources
+2015-07-09 09:42:18.739 Rezepte[11518:2359296] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:42:18.892 Rezepte[11518:2359296] [CDVTimer][statusbar] 27.697980ms
+2015-07-09 09:42:18.893 Rezepte[11518:2359296] [CDVTimer][TotalPluginStartup] 28.014004ms
+2015-07-09 09:42:19.000 Rezepte[11518:2359296] Resetting plugins due to page load.
+2015-07-09 09:42:19.281 Rezepte[11518:2359296] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/049628E4-B129-4965-BE38-D2C31BF6BD76/Rezepte.app/www/index.html
+2015-07-09 09:44:30.883 Rezepte[11518:2359296] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:44:30.884 Rezepte[11518:2359296] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:44:32.913 Rezepte[11518:2359296] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:44:32.913 Rezepte[11518:2359296] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:45:10.880 Rezepte[11518:2359296] Resetting plugins due to page load.
+2015-07-09 09:45:27.145 Rezepte[11518:2359296] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/049628E4-B129-4965-BE38-D2C31BF6BD76/Rezepte.app/www/rezept.html
+2015-07-09 09:47:16.248 Rezepte[11518:2359349] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-09 09:48:28.230 Rezepte[11687:2396447] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/6BA3F2F6-3824-4909-BA57-94CDE34EF626/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:48:28.377 Rezepte[11687:2396447] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:48:28.377 Rezepte[11687:2396447] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:48:28.380 Rezepte[11687:2396447] Unlimited access to network resources
+2015-07-09 09:48:28.387 Rezepte[11687:2396447] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:48:28.577 Rezepte[11687:2396447] [CDVTimer][statusbar] 35.122991ms
+2015-07-09 09:48:28.577 Rezepte[11687:2396447] [CDVTimer][TotalPluginStartup] 35.430968ms
+2015-07-09 09:48:28.705 Rezepte[11687:2396447] Resetting plugins due to page load.
+2015-07-09 09:48:29.039 Rezepte[11687:2396447] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/D95EF196-EC0E-4552-BEC0-B3D6E7B2F458/Rezepte.app/www/index.html
+2015-07-09 09:48:45.809 Rezepte[11817:2397584] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Data/Application/A19ADDEE-D8CC-4152-8EF5-450144BE09F1/Library/Cookies/Cookies.binarycookies
+2015-07-09 09:48:45.939 Rezepte[11817:2397584] Apache Cordova native platform version 3.7.0 is starting.
+2015-07-09 09:48:45.939 Rezepte[11817:2397584] Multi-tasking -> Device: YES, App: YES
+2015-07-09 09:48:45.941 Rezepte[11817:2397584] Unlimited access to network resources
+2015-07-09 09:48:45.945 Rezepte[11817:2397584] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-09 09:48:46.097 Rezepte[11817:2397584] [CDVTimer][statusbar] 25.084019ms
+2015-07-09 09:48:46.097 Rezepte[11817:2397584] [CDVTimer][TotalPluginStartup] 25.384009ms
+2015-07-09 09:48:46.210 Rezepte[11817:2397584] Resetting plugins due to page load.
+2015-07-09 09:48:46.482 Rezepte[11817:2397584] Finished load of: file:///Users/Wenia/Library/Developer/CoreSimulator/Devices/55AFC670-0A7A-4859-9FB0-94F596701BED/data/Containers/Bundle/Application/89B54B84-7B67-467C-8106-DF576725771F/Rezepte.app/www/index.html
+2015-07-09 09:52:42.949 Rezepte[11817:2397584] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:52:42.949 Rezepte[11817:2397584] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:52:59.738 Rezepte[11817:2397584] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:52:59.738 Rezepte[11817:2397584] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:53:34.748 Rezepte[11817:2397584] CDVWebViewDelegate: Navigation started when state=1
+2015-07-09 09:53:34.749 Rezepte[11817:2397584] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
