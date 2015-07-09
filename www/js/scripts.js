@@ -9,19 +9,22 @@ function startApp() {
 	//alert('Opened App2!');
 
 	//createDefaultData();
-    //  sayHello();             
+           
 	ladeTagesrezepte()
 	//$(uebersicht).center();
 	
-		
+	    sayHello();
 	
+	$(document).on('click', '#scroller a', function() {
+			initRezept(this);
+	});
+	
+		
+	   
 	//onDeviceReady3();
 	alert('end');
 }
 
-function sayHello(){
-			alert('Opened App2.5 Hello');
-}
 
 
 
@@ -87,15 +90,15 @@ function ladeTagesrezepte() {
 				alert('results.rows.item(i).RezeptID = ' + results.rows.item(i).RezeptID);	
 				alert('results.rows.item(i).Bild = ' + results.rows.item(i).Bild);
 */				
-                $("#scroller").append('<div class="section"><div class="hp-highlight" style="background:url(' + results.rows.item(i).Bild + ') no-repeat 0 0"><div class="feature-headline"><h1><a href="rezept.html">'+results.rows.item(i).Name+'</a></h1></div></div></div>');            	
+                $("#scroller").append('<div class="section"><div class="hp-highlight" style="background:url(' + results.rows.item(i).Bild + ') no-repeat 0 0"><div class="feature-headline"><h1><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '">'+results.rows.item(i).Name+'</a></h1></div></div></div>');            	
             }
         }
         else {
             $("#scroller").append('<li><h3>Kein Rezept angelegt</h3><p>Klicken Sie auf das Plus-Symbol oben rechts</p></li>');
         }
-		alert('test1');
+		//alert('test1');
         //$("#scroller").refresh();
-		alert('test2');
+		//alert('test2');
 	});
 }
 
