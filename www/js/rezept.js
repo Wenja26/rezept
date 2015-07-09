@@ -68,7 +68,7 @@ function fuegeZutatenInListviewEin(id){
                         }
                     } else{
                             $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
-                        }
+                    }
                     $("#mengeliste").listview('refresh');
                 });
 }
