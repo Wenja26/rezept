@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
     <title>Rezeptapp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,6 +56,65 @@
                 <li><a rel="external" href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
                 <li><a rel="external" href="suche.html" data-icon="search">Suche</a></li>
             </ul>
+=======
+    <head>
+        <title>Rezeptapp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+        <link rel="stylesheet" href="css/ios.css" />
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/merkzettel.js" charset="utf-8"></script>
+        <script src="js/db.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div data-role="page" id=merkzettel>
+            <div data-role="header">
+                <h1>Merkzettel</h1>
+            </div>
+            
+            <div role="main" class="ui-content">
+                <ul data-role="listview" id="merkzettelListview" data-filter="true" data-filter-placeholder="Rezept suchen..." data-inset="true">
+                    <!-- standardmäßig angezeigt, wenn die Datenbankabfrage nicht erfolgreiche war-->
+                    <li><a href ="#">
+                        <img src="css/img/chili.jpg">
+                        <h2>Chili Con Carne</h2>
+                    </a><li>
+                    <li><a rel="external" href="rezept.html?rezeptName=Gulasch">
+                        <img src="css/img/goulash.jpg">
+                        <h2>Gulasch</h2>
+                    </a><li>
+                    <li><a href ="#">
+                            <img src="css/img/rinderbraten.jpg">
+                            <h2>Rinderbraten</h2>
+                    </a><li>
+                    <li><a href ="#">
+                            <img src="css/img/seelachs.jpg">
+                                <h2>Seelachs mit Spargel</h2>
+                    </a><li>
+                    <li><a href ="#">
+                            <img src="css/img/gnocchi.JPG">
+                            <h2>Gnocchi</h2>
+                    </a><li>
+                </ul>
+            </div>
+            
+          
+            <!-- /footer -->
+            <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+                <!-- /navbar -->
+                <div data-role="navbar">
+                    <ul>
+                        <li><a rel="external" href="index.html" data-icon="home">Home</a></li>
+                        <li><a rel="external" href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
+                        <li><a rel="external" href="suche.html" data-icon="search">Suche</a></li>
+                    </ul>
+                </div>
+            </div>
+>>>>>>> 6bb0175f8fcdffd1d6d99f3d2d26b50f3d8e63d2
         </div>
     </div>
 </div>

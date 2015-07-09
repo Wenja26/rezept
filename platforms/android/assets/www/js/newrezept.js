@@ -108,7 +108,7 @@ function legeRezeptAn() {
 
 function fuegeArbeitsschrittinListview(arbeitsschritt, arbeitsart){
     $("#newArbeitsliste").empty();
-    $("#newArbeitsliste").append('<div data-role="fieldcontain"><label id="arbeitsschritt'+arbeitsschritte.length+ '">'+arbeitsschritt+'</label><label id="arbeitsart">'+arbeitsart+'</label></div>');
+    $("#newArbeitsliste").append('<li></li><div data-role="fieldcontain"><label id="arbeitsschritt'+arbeitsschritte.length+ '">'+arbeitsschritt+'</label><label id="arbeitsart">'+arbeitsart+'</label></div></li>');
 
     $("#newArbeitsliste").listview('refresh');
 
@@ -117,7 +117,7 @@ function fuegeArbeitsschrittinListview(arbeitsschritt, arbeitsart){
 
 function fuegeZutatinListview(zutat, menge, einheit){
     $("#newZutatenliste").empty();
-    $("#newZutatenliste").append('<div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-c"><label id="zutatmengeeinheit">'+einheit+'</label></div></div>');
+    $("#newZutatenliste").append('<li><div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-c"><label id="zutatmengeeinheit">'+einheit+'</label></div></div></li></li>');
     $("#newZutatenliste").listview('refresh');
 
 }

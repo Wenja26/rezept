@@ -8,8 +8,13 @@ function startApp() {
 	
 	//alert('Opened App2!');
 
+<<<<<<< HEAD
 	//createDefaultData();
             
+=======
+	createDefaultData();
+    //  sayHello();             
+>>>>>>> 6bb0175f8fcdffd1d6d99f3d2d26b50f3d8e63d2
 	ladeTagesrezepte();
 	//$(uebersicht).center();
 	
@@ -33,7 +38,7 @@ function createDefaultData(){
 	var id;
 	
 	//alle vorher löschen
-	/*
+
 	readRezeptFromName("Gulasch", function(tx, results2) {
 			var len1 = results2.rows.length;
 			var id2;
@@ -43,29 +48,33 @@ function createDefaultData(){
 					deleteRezept(id2);
 					}
 			}
-		});	
-		*/
-	
-	
+		});
+
 	createRezept("Gulasch", "css/img/goulash.jpg", function() {
 	
 	readRezeptFromName("Gulasch", function(tx, results) {
 			var len = results.rows.length;
 			if ( len >0 ) {
 			id = results.rows.item(0).RezeptID;
+             alert(id);
 			}
-	console.log('id = ' + id);		
+		console.log('id = ' + id);
+
 	console.log('length = ' + len);		
 	createZutat(id, 'Gulasch', '1', 'kg' );
 	createZubereitung(id, 'Fleisch etwas kleiner schneiden, mit den Gewürzen würzen und anbraten, in der Zwischenzeit Zwiebeln vierteln und mitbraten.', 'Schneiden');
 	createZubereitungsbild('Schneiden', 'css/img/schneiden.gif');
 	console.log('Loaded Data!');
 	
-		});	
-	
+		});
+		alert(id);
+		merkeRezept(id, function(){
+			alert("gemerkt");
+
+		});
+
 	});
-	
-	
+
  }
  
  

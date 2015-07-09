@@ -161,11 +161,13 @@ function deleteMarkierung(id, callback) {
 	});
 }
 
+
 function readMerkliste(callback) {
 	db.transaction(function(tx) {
-                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID GROUP BY r.ID ORDER BY Name ASC", [], callback);
+                   tx.executeSql("SELECT * FROM Merkliste m LEFT JOIN Rezepte r ON m.RezeptID = r.RezeptID GROUP BY r.RezeptID ORDER BY Name ASC", [], callback);
 	}, errorCB, successCB);
 }
+
 
 
 function createZubereitungsbild(art, bild, callback) {
