@@ -1,7 +1,7 @@
 var db;
 
 function openDB() {
-	alert('opendDatabase 0');
+	console.log('opendDatabase 0');
 	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000);
 	//alert('opendDatabase 1');
 	db.transaction(createTables, errorCB, successCB);

@@ -12,8 +12,6 @@
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/scripts.js" charset="utf-8"></script>
         <script src="js/merkzettel.js" charset="utf-8"></script>
-        <script src="js/rezept.js" charset="utf-8"></script>
-        
     </head>
     <body>
         <div data-role="page" id=merkzettel>
@@ -28,7 +26,7 @@
                         <img src="css/img/chili.jpg">
                         <h2>Chili Con Carne</h2>
                     </a><li>
-                    <li><a href ="rezept.html">
+                    <li><a rel="external" href="rezept.html?rezeptName=Gulasch">
                         <img src="css/img/goulash.jpg">
                         <h2>Gulasch</h2>
                     </a><li>
@@ -53,9 +51,9 @@
                 <!-- /navbar -->
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="index.html" data-icon="home">Home</a></li>
-                        <li><a href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
-                        <li><a href="suche.html" data-icon="search">Suche</a></li>
+                        <li><a rel="external" href="index.html" data-icon="home">Home</a></li>
+                        <li><a rel="external" href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
+                        <li><a rel="external" href="suche.html" data-icon="search">Suche</a></li>
                     </ul>
                 </div>
             </div>

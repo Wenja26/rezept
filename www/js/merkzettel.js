@@ -1,5 +1,5 @@
-document.addEventListener("deviceready", onDeviceReady, false);
-
+$(document).bind('pagebeforeshow',function(){
+    fuegeRezepteInMerkzettelEin();
 function onDeviceReady() {
     alert('onDeviceReady von merkzettel.js ausgeführt');
     fuegeRezepteInMerkzettelEin();
@@ -8,13 +8,14 @@ function onDeviceReady() {
 
 
 function fuegeRezepteInMerkzettelEin() {
+  alert("onDeviceReady of merkzetteljs")
     readMerkliste(function(tx, results) {
                $("#merkzettelListview").empty();
                var len = results.rows.length;
                if ( len > 0 ) {
                   for (var i=0; i<len; i++ ) {
                   console.log(results.rows.item(i));
-                  $("#merkzettelListview").append('<li><a href ="#rezept.html"><img src="'+results.rows.item(i).Bild+'"><h2>'+results.rows.item(i).Name+'</h2></a><li>');
+                  $("#merkzettelListview").append('<li><a rel="external" href ="rezept.html?rezeptName='+results.rows.item(i).Name+'><img src="'+results.rows.item(i).Bild+'"><h2>'+results.rows.item(i).Name+'</h2></a><li>');
                   }
                }
                else {

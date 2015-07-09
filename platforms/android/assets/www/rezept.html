@@ -11,20 +11,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/rezept.js" charset="utf-8"></script>
-        <script src="js/scripts.js" charset="utf-8"></script>
+        <!--<script src="js/scripts.js" charset="utf-8"></script>-->
 		<script src="js/db.js" charset="utf-8"></script>
-
-
-        <script>
-
-            $(document).on("pagebeforecreate", function () {
-                $.get('partials/burgerMenu.html', function(data) {
-                    $(data).prependTo($.mobile.pageContainer); //or .prependTo("body");
-                    //$.mobile.pageContainer.prepend(data);
-                    $("[data-role=panel]").panel().enhanceWithin(); // initialize panel
-                }, "html");
-            });
-        </script>
         
     </head>
     <body>
@@ -35,19 +23,20 @@
             </div>
             
             <div role="main" class="ui-content">
-                <h2 id="rezeptname">Default</h2>
+                <h2 id="rezeptname">Gulasch</h2>
                 <!--Rezeptfoto-->
-                <img src="" display="inline" width="100%" id="rezeptbild"/>
+                <img src="css/img/goulash.jpg" display="inline" width="100%" id="rezeptbild"/>
                
                     <p display="inline-block">Zutaten fuer 4 Portionen:</p>
-                    <a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-notext"></a>
-                    <a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-notext" ></a>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-minus ui-btn-icon-notext" id="weniger"></a>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-notext" id="mehr"></a>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-star ui-btn-icon-notext" id="favorisieren"></a>
           
                 
 
                 <p> </p>
                 <ul data-role="listview" id="mengeliste">
-                    <!--    <li>1 kg Gulasch</li>
+                       <li>1 kg Gulasch</li>
                         <li>3 EL Butterschmalz</li>
                         <li>200 g Zwiebeln, klein gewuerfelt</li>
                         <li>1 Moehre, klein gewuerfelt</li>
@@ -55,7 +44,7 @@
                         <li>etwas Tyhmian</li>
                         <li>evtl. Zucker</li>
                         <li>evtl. Sahne</li>
-                        <li>Wein, rot, trocken</li>  -->
+                        <li>Wein, rot, trocken</li>
                 </ul>
                 <p></p>
                 <a href="zubereitung.html" data-role="button">Anfangen zu kochen...</a>
@@ -66,9 +55,9 @@
             <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="index.html" data-icon="home">Home</a></li>
-                        <li><a href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
-                        <li><a href="suche.html" data-icon="search">Suche</a></li>
+                        <li><a  rel="external" href="index.html" data-icon="home">Home</a></li>
+                        <li><a  rel="external" href="merkzettel.html" data-icon="star" class="ui-btn-active">Merkzettel</a></li>
+                        <li><a rel="external" href="suche.html" data-icon="search">Suche</a></li>
                     </ul>
                 </div><!-- /navbar -->
             </div><!-- /footer -->

@@ -1,25 +1,40 @@
-//document.addEventListener("deviceready", onDeviceReady2, false);
+var urlParams;
 
-function onDeviceReady2() {
-
-    alert('onDeviceReady von rezept.js ausgeführt');
-	/*
+$(document).bind('pagebeforeshow',function(){
+    console.log('rezept.js pagebeforeshow triggered');
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
-    var id;
-    zeigeRezeptAn(id);
-    fuegeZutatenInListviewEin(id);
-	*/
-}
-/*
-// device APIs are available
+    parseUrlParams();
+
+    rezeptName = urlParams["rezeptName"];
+
+    console.log("Looking up "+rezeptName);
+
+    zeigeRezeptAn(rezeptName);
+    fuegeZutatenInListviewEin(rezeptName);
+    $('#mehr').on('click', mengeErhoehen);
+    $('#weniger').on('click', mengeSinken);
+    $('#favorisieren').on('click', rezeptmerken);
+
+});
 
 //id vom Aufruf
 var id;
 zeigeRezeptAn(id);
 
+function mengeErhoehen(){
 
+}
+function mengeSinken(){
+
+}
+function rezeptmerken(){
+    merkeRezept(id, function(){
+        alert("Rezept vermerkt!");
+    });
+
+}
 
 function fuegeZutatenhinzu(){
     $('#mengeliste').empty();
@@ -53,7 +68,7 @@ function fuegeZutatenhinzu(){
     $("#mengeListe").listview('refresh');
 }
 */
-/*
+
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
@@ -79,3 +94,15 @@ function fuegeZutatenInListviewEin(id){
                     $("#mengeliste").listview('refresh');
                 });
 }
+
+function parseUrlParams() {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+};

@@ -1,8 +1,9 @@
-document.addEventListener("deviceready", onDeviceReady, true);
+//document.addEventListener("deviceready", onDeviceReady2, false);
 
-function onDeviceReady() {
+function onDeviceReady2() {
 
     alert('onDeviceReady von rezept.js ausgeführt');
+	/*
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
@@ -14,6 +15,7 @@ function onDeviceReady() {
     $('#favorisieren').on('click', rezeptmerken);
 
 }
+/*
 // device APIs are available
 
 //id vom Aufruf
@@ -42,7 +44,7 @@ function fuegeZutatenhinzu(){
 
 function fuegeRezeptdetails(){
     $('#rezeptbild').show();
-    $('#rezeptbild').attr('src', "css/img/goulash.jpg");
+    $('#rezeptbild').attr('src', 'css/img/goulash.jpg');
 	$('#rezeptbild').show();
     $('#rezeptname').text('Gulasch');
 }
@@ -65,7 +67,7 @@ function fuegeZutatenhinzu(){
     $("#mengeListe").listview('refresh');
 }
 */
-
+/*
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
@@ -83,7 +85,7 @@ function fuegeZutatenInListviewEin(id){
                     var len = results.rows.length;
                     if ( len > 0 ) {
                         for (var i = 0; i < len; i++) {
-                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + results.rows.item(i).Mengeneinheit + results.rows.item(i).Name + '</li>');
+                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
                         }
                     } else{
                             $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
