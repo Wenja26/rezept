@@ -10,7 +10,10 @@ function onDeviceReady2() {
     var id;
     zeigeRezeptAn(id);
     fuegeZutatenInListviewEin(id);
-	*/
+    $('#mehr').on('click', mengeErhoehen);
+    $('#weniger').on('click', mengeSinken);
+    $('#favorisieren').on('click', rezeptmerken);
+
 }
 /*
 // device APIs are available
@@ -19,7 +22,18 @@ function onDeviceReady2() {
 var id;
 zeigeRezeptAn(id);
 
+function mengeErhoehen(){
 
+}
+function mengeSinken(){
+
+}
+function rezeptmerken(){
+    merkeRezept(id, function(){
+        alert("Rezept vermerkt!");
+    });
+
+}
 
 function fuegeZutatenhinzu(){
     $('#mengeliste').empty();

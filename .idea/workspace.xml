@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eae3fa4-47db-4c0c-9adb-d8a560d71076" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/db.js" afterPath="$PROJECT_DIR$/www/js/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/console.log" afterPath="$PROJECT_DIR$/platforms/ios/cordova/console.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/db.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/rezept.html" afterPath="$PROJECT_DIR$/platforms/ios/www/rezept.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/rezept.html" afterPath="$PROJECT_DIR$/www/rezept.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/rezept.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/rezept.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/rezept.js" afterPath="$PROJECT_DIR$/www/js/rezept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/zubereitung.js" afterPath="$PROJECT_DIR$/www/js/zubereitung.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/zubereitung.html" afterPath="$PROJECT_DIR$/platforms/ios/www/zubereitung.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/zubereitung.html" afterPath="$PROJECT_DIR$/www/zubereitung.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/zubereitung.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/zubereitung.js" />
     </list>
     <ignored path="rezept.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +38,28 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.589372" vertical-offset="2424" max-vertical-offset="3045">
-              <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.38647342" vertical-offset="0" max-vertical-offset="3045">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rezept.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/rezept.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="849" max-vertical-offset="1470">
+              <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rezept.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/rezept.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1095">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -50,31 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rezept.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/rezept.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.615383" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rezept.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/rezept.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="330" max-vertical-offset="1260">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="merkzettel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/merkzettel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <caret line="10" column="41" selection-start-line="9" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -83,7 +90,7 @@
       <file leaf-file-name="merkzettel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/merkzettel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.416667" vertical-offset="412" max-vertical-offset="1035">
+            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1035">
               <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
@@ -113,8 +120,8 @@
       <file leaf-file-name="zubereitung.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/zubereitung.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.18" vertical-offset="26" max-vertical-offset="1110">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -139,14 +146,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/js/scripts.js" />
-        <option value="$PROJECT_DIR$/www/rezept.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/merkzettel.html" />
         <option value="$PROJECT_DIR$/www/js/merkzettel.js" />
-        <option value="$PROJECT_DIR$/www/zubereitung.html" />
-        <option value="$PROJECT_DIR$/www/js/rezept.js" />
         <option value="$PROJECT_DIR$/www/js/db.js" />
         <option value="$PROJECT_DIR$/www/js/zubereitung.js" />
+        <option value="$PROJECT_DIR$/www/js/rezept.js" />
+        <option value="$PROJECT_DIR$/www/zubereitung.html" />
+        <option value="$PROJECT_DIR$/www/rezept.html" />
       </list>
     </option>
   </component>
@@ -452,50 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/zubereitung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.18" vertical-offset="26" max-vertical-offset="1110">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/rezept.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="330" max-vertical-offset="1260">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/merkzettel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.416667" vertical-offset="412" max-vertical-offset="1035">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/merkzettel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="10" column="41" selection-start-line="9" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/rezept.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.615383" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -510,10 +477,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/rezept.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="849" max-vertical-offset="1470">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/zubereitung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/merkzettel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/merkzettel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/rezept.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.589372" vertical-offset="2424" max-vertical-offset="3045">
-          <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.38647342" vertical-offset="0" max-vertical-offset="3045">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
       </provider>
