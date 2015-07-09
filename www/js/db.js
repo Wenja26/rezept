@@ -1,8 +1,11 @@
 var db;
 
 function openDB() {
-	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000000);
+	alert('opendDatabase 0');
+	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000);
+	alert('opendDatabase 1');
 	db.transaction(createTables, errorCB, successCB);
+	alert('opendDatabase 2');
 }
 
 
@@ -14,6 +17,8 @@ function createTables(tx) {
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungsbilder (BildID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,  Art TEXT NOT NULL, Bild TEXT)");
 }
 
+
+
 function errorCB(err) {
 	alert('Fehler bei der Ausführung des SQLs: ' + err.code + ' - ' + err.message);
 }
@@ -24,11 +29,13 @@ function successCB() {
 	// alles okay, nichts ausgeben
 }
 
+
 function createRezept(name, bild, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Rezepte (Name, Bild) VALUES (?, ?)", [name, bild] , callback);
 	}, errorCB, successCB);
 }
+
 
 
 
@@ -46,22 +53,27 @@ function readRezepte(callback) {
 
 
 
-function readRezept(id, callback) {
+function readRezeptFromID(id, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p
-						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
-						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
-						WHERE p.RezeptID = ? 
-						GROUP BY p.ID, p.Name", [id], callback);
+		tx.executeSql("SELECT * FROM Rezepte p WHERE p.RezeptID = ?", [id], callback);
 	}, errorCB, successCB);
 }
 
+
+
+function readRezeptFromName(name, callback) {
+	db.transaction(function(tx) {
+		tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
+	}, errorCB, successCB);
+}
+/*
+/**
 function readRezept(name, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
 						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
 						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
-						WHERE p.Name = ? 
+						WHERE  p.Name = ? 
 						GROUP BY p.ID, p.Name", [name], callback);
 	}, errorCB, successCB);
 }
@@ -70,9 +82,11 @@ function readRezept(name, callback) {
 function getIDofRezept(name, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT p.RezeptID FROM Rezepte p 
-						WHERE p.Name = ?", [name], callback);
+						WHERE p.Name = ?", [name], callback );
 	}, errorCB, successCB);
 }
+
+/*
 
 function deleteRezept(id, callback) {
 	db.transaction(function(tx) {
@@ -114,7 +128,7 @@ function readZubereitungen(rezeptID, callback) {
 
 
 
-function createZutat(rezeptID, name, menge, mengeneinheit callback) {
+function createZutat(rezeptID, name, menge, mengeneinheit, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Zutaten (RezeptID, Name, Menge, Mengeneinheit) VALUES (?, ?, ?, ?)", [rezeptID, name, menge, mengeneinheit] , callback);
 	}, errorCB, successCB);
@@ -183,7 +197,7 @@ function deleteZubereitungsbild(id, callback) {
 
 function readZubereitungsbild(bildID, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT Bild FROM Zubereitungsbilder WHERE BildID = ?", [bildID], callback);
+		tx.executeSql("SELECT z.Bild FROM Zubereitungsbilder z WHERE BildID = ?", [bildID], callback);
 	}, errorCB, successCB);
 }
 
@@ -195,3 +209,4 @@ function readZubereitungsbild(art, callback) {
 
 
 
+*/
