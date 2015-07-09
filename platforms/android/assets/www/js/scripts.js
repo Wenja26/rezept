@@ -3,18 +3,17 @@ document.addEventListener("deviceready", startApp, false);
 
 function startApp() {
 	// Verbindung zur Datenbank öffnen
-	alert('Opened App!');
+	//alert('Opened App!');
 	openDB();
 	
-	alert('Opened App2!');
-   
-	sayHello();
+	//alert('Opened App2!');
+
 	//createDefaultData();
       //sayHello();             
 	//ladeTagesrezepte()
 	//$(uebersicht).center();
 	
-		alert('end');
+		//alert('end');
 	
 }
 

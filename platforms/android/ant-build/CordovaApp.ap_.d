@@ -45,6 +45,7 @@ C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\andro
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\buttons.png \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\ios.css \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.mobile-1.3.1.css \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.mobile-1.4.5.min.css \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.simplyscroll.css \
@@ -76,7 +77,9 @@ C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\andro
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images\icons-36-white.png \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\db.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.min.js \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.min.map \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.js \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.map \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\merkzettel.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\newrezept.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept.js \

@@ -7,11 +7,24 @@
         <link rel="stylesheet" href="css/ios.css" />
         <link rel="stylesheet" href="css/rezept.css" />
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/rezept.js" charset="utf-8"></script>	
+        <script src="js/rezept.js" charset="utf-8"></script>
+        <script src="js/scripts.js" charset="utf-8"></script>
 		<script src="js/db.js" charset="utf-8"></script>
 
+
+        <script>
+
+            $(document).on("pagebeforecreate", function () {
+                $.get('partials/burgerMenu.html', function(data) {
+                    $(data).prependTo($.mobile.pageContainer); //or .prependTo("body");
+                    //$.mobile.pageContainer.prepend(data);
+                    $("[data-role=panel]").panel().enhanceWithin(); // initialize panel
+                }, "html");
+            });
+        </script>
         
     </head>
     <body>

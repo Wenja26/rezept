@@ -1,11 +1,11 @@
 var db;
 
 function openDB() {
-	alert('opendDatabase 0');
+	//alert('opendDatabase 0');
 	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000);
-	alert('opendDatabase 1');
+	//alert('opendDatabase 1');
 	db.transaction(createTables, errorCB, successCB);
-	alert('opendDatabase 2');
+	//alert('opendDatabase 2');
 }
 
 
@@ -66,27 +66,19 @@ function readRezeptFromName(name, callback) {
 		tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
 	}, errorCB, successCB);
 }
-/*
-/**
+
 function readRezept(name, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p 
-						LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID 
-						LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID 
-						WHERE  p.Name = ? 
-						GROUP BY p.ID, p.Name", [name], callback);
+		tx.executeSql("SELECT p.RezeptID, p.Name, p.Bild, FROM Rezepte p LEFT JOIN Zutaten z ON z.RezeptID = p.RezeptID LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID WHERE  p.Name = ? GROUP BY p.ID, p.Name", [name], callback);
 	}, errorCB, successCB);
 }
 
 
 function getIDofRezept(name, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT p.RezeptID FROM Rezepte p 
-						WHERE p.Name = ?", [name], callback );
+		tx.executeSql("SELECT p.RezeptID FROM Rezepte p WHERE p.Name = ?", [name], callback );
 	}, errorCB, successCB);
 }
-
-/*
 
 function deleteRezept(id, callback) {
 	db.transaction(function(tx) {
@@ -168,15 +160,12 @@ function deleteMarkierung(id, callback) {
 
 function readMerkliste(callback) {
 	db.transaction(function(tx) {
-                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m
-                                 LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID
-                                 LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID
-                                 GROUP BY r.ID ORDER BY Name ASC", [], callback);
+                   tx.executeSql("SELECT r.Name, r.Bild, FROM Merkliste m LEFT JOIN Rezepte r ON m.RezeptID = p.RezeptID LEFT JOIN Zubereitung x ON x.RezeptID = p.RezeptID GROUP BY r.ID ORDER BY Name ASC", [], callback);
 	}, errorCB, successCB);
 }
 
 
-function createZubereitungsbild(art, bild callback) {
+function createZubereitungsbild(art, bild, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Zubereitungsbilder (Art, Bild) VALUES (?, ?, ?, ?)", [art, bild] , callback);
 	}, errorCB, successCB);
@@ -206,7 +195,3 @@ function readZubereitungsbild(art, callback) {
 		tx.executeSql("SELECT z.Bild FROM Zubereitungsbilder z WHERE Art = ? ", [art], callback);
 	}, errorCB, successCB);
 }
-
-
-
-*/
