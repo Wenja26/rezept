@@ -1,3 +1,4 @@
+/*
 document.addEventListener("deviceready", onDeviceReady2, false);
 
 function onDeviceReady2() {
@@ -28,10 +29,10 @@ function mengeErhoehen(){
         if ( len > 0 ) {
             for (var i = 0; i < len; i++) {
                 var mengeNeu = results.rows.item(i).Menge * 2;
-                $("#mengeListe").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                $("#mengeliste").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
             }
         } else{
-            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
+            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
         }
         $("#mengeliste").listview('refresh');
     });
@@ -44,10 +45,10 @@ function mengeSinken(){
         if ( len > 0 ) {
             for (var i = 0; i < len; i++) {
                 var mengeNeu = results.rows.item(i).Menge / 2;
-                $("#mengeListe").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                $("#mengeliste").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
             }
         } else{
-            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
+            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
         }
         $("#mengeliste").listview('refresh');
     });
@@ -68,9 +69,9 @@ function fuegeZutatenhinzu(){
 
 
 function fuegeRezeptdetails(){
-    $('#rezeptbild').show();
-    $('#rezeptbild').attr('src', 'css/img/goulash.jpg');
-	$('#rezeptbild').show();
+   // $('#rezeptimage').show();
+    $('#rezeptimage').attr('src', 'css/img/goulash.jpg');
+	$('#rezeptimage').show();
     $('#rezeptname').text('Gulasch');
 }
 
@@ -78,18 +79,6 @@ function fuegeRezeptdetails(){
 
 
 
-
-function fuegeRezeptdetails(){
-    $('#image').show();
-    $('#image').attr('src', "css/img/goulash.jpg");
-    $('#rezeptname').text('Gulasch');
-}
-
-
-function fuegeZutatenhinzu(){
-    $("#mengeListe").empty();
-    $("#mengeListe").append('<li>1 kg Gulasch </li>');
-    $("#mengeListe").listview('refresh');
 }
 
 // Projekt anzeigen
@@ -106,15 +95,18 @@ function zeigeRezeptAn(rezeptname) {
 
 function fuegeZutatenInListviewEin(id){
     readZutaten(id, function(tx, results) {
-                    $("#mengeListe").empty();
+                    $("#mengeliste").empty();
                     var len = results.rows.length;
                     if ( len > 0 ) {
                         for (var i = 0; i < len; i++) {
-                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                            $("#mengeliste").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
                         }
                     } else{
-                            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
+                            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
                     }
                     $("#mengeliste").listview('refresh');
                 });
 }
+
+
+*/

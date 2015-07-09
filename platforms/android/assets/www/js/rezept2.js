@@ -81,14 +81,14 @@ function zeigeRezeptAn(rezeptname) {
 
 function fuegeZutatenInListviewEin(id){
     readZutaten(id, function(tx, results) {
-                    $("#mengeListe").empty();
+                    $("#mengelliste").empty();
                     var len = results.rows.length;
                     if ( len > 0 ) {
                         for (var i = 0; i < len; i++) {
-                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                            $("#mengelliste").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
                         }
                     } else{
-                            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
+                            $("#mengelliste").append('<li>Zutaten leider nicht bekannt</li>');
                     }
                     $("#mengeliste").listview('refresh');
                 });

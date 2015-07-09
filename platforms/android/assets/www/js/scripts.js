@@ -9,13 +9,14 @@ function startApp() {
 	//alert('Opened App2!');
 
 	//createDefaultData();
-           
-	ladeTagesrezepte()
+            
+	ladeTagesrezepte();
 	//$(uebersicht).center();
 	
 	    sayHello();
 	
 	$(document).on('click', '#scroller a', function() {
+		alert('clicked rezept');
 			initRezept(this);
 	});
 	

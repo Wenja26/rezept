@@ -16,6 +16,7 @@ function startApp() {
 	    sayHello();
 	
 	$(document).on('click', '#scroller a', function() {
+		alert('clicked rezept');
 			initRezept(this);
 	});
 	
