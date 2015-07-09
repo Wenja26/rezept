@@ -8,13 +8,10 @@ function startApp() {
 	
 	//alert('Opened App2!');
 
-<<<<<<< HEAD
+
 	//createDefaultData();
-            
-=======
-	createDefaultData();
-    //  sayHello();             
->>>>>>> 6bb0175f8fcdffd1d6d99f3d2d26b50f3d8e63d2
+
+    //  sayHello();
 	ladeTagesrezepte();
 	//$(uebersicht).center();
 	

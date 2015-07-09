@@ -1,3 +1,37 @@
+$(document).bind('pagebeforeshow',function() {
+    openDB();
+    $('#buttonSucheStarten').on('click',suche);
+});
+
+
+function suche(){
+    var sucheInput = $('#sucheInput').val();
+
+    if (sucheInput.length == 0) {
+        alert('Bitte alle Eingaben ausfuellen!');
+        return;
+    }
+
+    readRezeptFromName(name, function(tx, results) {
+
+        $("#rezeptSucheListe").empty();
+        var len = results.rows.length;
+        if ( len > 0 ) {
+            for (var i=0; i<len; i++ ) {
+                $("#rezeptSucheListe").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="'+ results.rows.item(i).Bild  +'"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+            }
+        }
+        else {
+            $("#rezeptSucheListe").append('<li><h3>Kein Rezept gefunden</h3></li>');
+        }
+        $("#rezeptSucheListe").listview('refresh');
+
+
+    });
+
+
+}
+
 /*
 $( document ).on( "pagecreate", "#myPage", function() {
     $( "#autocomplete" ).on( "filterablebeforefilter", function ( e, data ) {
@@ -29,7 +63,7 @@ $( document ).on( "pagecreate", "#myPage", function() {
     });
 });
 */
-
+/*
 // Rezepte in Listview einfügen
 function fuegeRezepteInListviewEin() {
     //eine Methode aus der db.js
@@ -47,3 +81,4 @@ function fuegeRezepteInListviewEin() {
                 $("#autocompleteRezeptSuche").listview('refresh');
                 });
 }
+    */

@@ -9,10 +9,9 @@
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-          <script src="js/scripts.js" charset="utf-8"></script>
+          <script src="js/suche.js" charset="utf-8"></script>
 		<script src="js/db.js" charset="utf-8"></script>
-		<script src="js/rezept.js" charset="utf-8"></script>
-		<script src="js/rezept2.js" charset="utf-8"></script>
+
     </head>
     <body>
         
@@ -21,12 +20,12 @@
                 <h1>Suche</h1>
              </div>
 			 <form class="ui-filterable">
-				<input id="autocomplete-input" data-type="search" placeholder="Rezept suchen...">
+				<input id="sucheInput" data-type="search" placeholder="Rezept suchen...">
 			</form>
 			<form>
 			<div class="ui-field-contain">
-				<label for="select-native-2">Suche anhand...</label>
-				<select name="select-native-2" id="select-native-2" data-mini="true">
+				<label for="select-anhand">Suche anhand...</label>
+				<select name="select-native-2" id="select-anhand" data-mini="true">
 					<option value="1">Rezeptnamen</option>
 					<option value="2">Zutaten</option>
 				</select>
@@ -34,25 +33,34 @@
 			</form>
 			<form>
 			<div class="ui-field-contain">				
-				<label for="select-native-2">Filter nach...</label>
-				<select name="select-native-2" id="select-native-2" data-mini="true">
+				<label for="select-filter">Filter nach...</label>
+				<select name="select-native-2" id="select-filter" data-mini="true">
 					<option value="1">Alle Rezepte</option>
 					<option value="2">Vegetarische Rezepte</option>
 					<option value="3">Vegane Rezepte</option>
 				</select>
 			</div>
 			</form>
-		
-			
-			
-			
-			<ul id="autocompleteRezeptSuche" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input">
-			<!--	<li><a href ="rezept.html">
-                        <img src="css/img/goulash.jpg">
-                        <h2>Gulasch</h2>
-                   </a><li>-->
+
+
+<!--
+            <input type="text" placeholder="Suchbegriff eingeben..." id="sucheInput"/>
+            -->
+
+
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-left" id="buttonSucheStarten">Suche starten!</a>
+
+            <!--data-filter="true" data-input="#autocomplete-input"-->
+			<ul id="rezeptSucheListe" data-role="listview" data-inset="true" >
+
 			</ul>
-			
+<!--
+            <li><a href ="rezept.html">
+                <img src="css/img/goulash.jpg">
+                <h2>Gulasch</h2>
+            </a><li>
+
+			-->
             
             <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
                 <div data-role="navbar">
