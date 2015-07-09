@@ -1,7 +1,7 @@
 var db;
 
 function openDB() {
-	//alert('opendDatabase 0');
+	alert('opendDatabase 0');
 	db = window.openDatabase("Rezeptapp", "1", "Datenbank Rezeptapp", 1000);
 	//alert('opendDatabase 1');
 	db.transaction(createTables, errorCB, successCB);
@@ -95,7 +95,7 @@ function deleteRezept(id, callback) {
 
 function createZubereitung(rezeptID, details, art, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("INSERT INTO Zubereitungen (RezeptID, Details, Art) VALUES (?, ?,?)", [rezeptID, details, art] , callback);
+		tx.executeSql("INSERT INTO Zubereitungen (RezeptID, Details, Art) VALUES (?, ?, ?)", [rezeptID, details, art] , callback);
 	}, errorCB, successCB);
 }
 
@@ -167,7 +167,7 @@ function readMerkliste(callback) {
 
 function createZubereitungsbild(art, bild, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("INSERT INTO Zubereitungsbilder (Art, Bild) VALUES (?, ?, ?, ?)", [art, bild] , callback);
+		tx.executeSql("INSERT INTO Zubereitungsbilder (Art, Bild) VALUES (?, ?)", [art, bild] , callback);
 	}, errorCB, successCB);
 }
 

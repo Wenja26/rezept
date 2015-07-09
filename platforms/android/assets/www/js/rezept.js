@@ -1,15 +1,18 @@
-document.addEventListener("deviceready", onDeviceReady2, true);
+document.addEventListener("deviceready", onDeviceReady2, false);
 
 function onDeviceReady2() {
 
     alert('onDeviceReady von rezept.js ausgeführt');
+	/*
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
     var id;
     zeigeRezeptAn(id);
     fuegeZutatenInListviewEin(id);
+	*/
 }
+/*
 // device APIs are available
 
 //id vom Aufruf
@@ -27,7 +30,7 @@ function fuegeZutatenhinzu(){
 
 function fuegeRezeptdetails(){
     $('#rezeptbild').show();
-    $('#rezeptbild').attr('src', "css/img/goulash.jpg");
+    $('#rezeptbild').attr('src', 'css/img/goulash.jpg');
 	$('#rezeptbild').show();
     $('#rezeptname').text('Gulasch');
 }
@@ -50,7 +53,7 @@ function fuegeZutatenhinzu(){
     $("#mengeListe").listview('refresh');
 }
 */
-
+/*
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
