@@ -59,7 +59,7 @@ function zeigeRezeptAn(rezeptname) {
         $('#rezeptimage').attr('src', rezept.Bild);
 
     });
-    fuegeZutatenInListviewEin(id);
+    fuegeZutatenInListviewEin(rezept.RezeptID);
 }
 
 function fuegeZutatenInListviewEin(id){

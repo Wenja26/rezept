@@ -114,7 +114,7 @@ function deleteZubereitung(id, callback) {
 
 function readZubereitungen(rezeptID, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT * FROM Zubereitungen WHERE RezeptID = ? ORDER BY Name ASC", [rezeptID], callback);
+		tx.executeSql("SELECT z.Details, zb.Bild FROM Zubereitungen z LEFT JOIN Zubereitungsbilder zb ON z.Art = zb.Art WHERE z.RezeptID = ? ORDER BY Name ASC", [rezeptID], callback);
 	}, errorCB, successCB);
 }
 
@@ -184,11 +184,12 @@ function deleteZubereitungsbild(id, callback) {
 	});
 }
 
+/*
 function readZubereitungsbild(bildID, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT z.Bild FROM Zubereitungsbilder z WHERE BildID = ?", [bildID], callback);
 	}, errorCB, successCB);
-}
+}*/
 
 function readZubereitungsbild(art, callback) {
 	db.transaction(function(tx) {
