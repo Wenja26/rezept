@@ -21,7 +21,7 @@ function sayHello(){
 			alert('Opened App2.5 Hello');
 }
 
- /*
+
 function createDefaultData(){
 	var id;
 	
@@ -45,7 +45,7 @@ function getTimestamp() {
 	return Math.floor(Date.now() / 1000);
 }
 
-/*
+
 function ladeTagesrezepte() {
 	readRezepte(function(tx, results) {
         $("#tagesRezeptList").empty();
@@ -53,14 +53,7 @@ function ladeTagesrezepte() {
 		var random= 0;
         if ( len > 0 ) {
             for (var i=0; i<len; i++ ) {
-                $("#tagesRezeptList").append(
-				'<div class="section">
-						<div class="hp-highlight" style="background:url(' + results.rows.item(i).Name + ') no-repeat 0 0">
-							<div class="feature-headline">
-								<h1><a href="rezept.html" data-projektid="' + results.rows.item(i).Name + '"></a></h1>
-							</div>
-						</div>
-				</div>'
+                $("#tagesRezeptList").append('<div class="section"><div class="hp-highlight" style="background:url(' + results.rows.item(i).Name + ') no-repeat 0 0"><div class="feature-headline"><h1><a href="rezept.html" data-projektid="' + results.rows.item(i).Name + '"></a></h1></div></div></div>'
 				);            	
             }
         }
@@ -71,8 +64,7 @@ function ladeTagesrezepte() {
 	});
 }
 
-*/
-/*
+
 
 
 jQuery.fn.center = function () {
@@ -84,4 +76,3 @@ jQuery.fn.center = function () {
     return this;
 }
 
-*/

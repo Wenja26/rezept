@@ -1,6 +1,6 @@
-document.addEventListener("deviceready", onDeviceReady, true);
+document.addEventListener("deviceready", onDeviceReady2, true);
 
-function onDeviceReady() {
+function onDeviceReady2() {
 
     alert('onDeviceReady von rezept.js ausgeführt');
     fuegeZutatenhinzu();
@@ -59,7 +59,7 @@ function zeigeRezeptAn(rezeptname) {
         $('#rezeptimage').attr('src', rezept.Bild);
 
     });
-    fuegeZutatenInListviewEin(id);
+    fuegeZutatenInListviewEin(rezept.RezeptID);
 }
 
 function fuegeZutatenInListviewEin(id){
@@ -68,7 +68,7 @@ function fuegeZutatenInListviewEin(id){
                     var len = results.rows.length;
                     if ( len > 0 ) {
                         for (var i = 0; i < len; i++) {
-                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + results.rows.item(i).Mengeneinheit + results.rows.item(i).Name + '</li>');
+                            $("#mengeListe").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
                         }
                     } else{
                             $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
