@@ -5,7 +5,7 @@ function fuegeRezepteInMerkzettelEin(projektid) {
                if ( len > 0 ) {
                   for (var i=0; i<len; i++ ) {
                   console.log(results.rows.item(i));
-                  $("#zeitenliste").append('<li><a href ="#rezept.html"><img src="'+results.rows.item(i).Bild+'"><h2>'+results.rows.item(i).Name+'</h2></a><li>');
+                  $("#merkzettelListview").append('<li><a href ="#rezept.html"><img src="'+results.rows.item(i).Bild+'"><h2>'+results.rows.item(i).Name+'</h2></a><li>');
                   }
                }
                else {

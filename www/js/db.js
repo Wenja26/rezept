@@ -162,7 +162,7 @@ function readMerkliste(callback) {
 }
 
 
-function createZubereitungsbild(art, bild callback) {
+function createZubereitungsbild(art, bild, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Zubereitungsbilder (Art, Bild) VALUES (?, ?, ?, ?)", [art, bild] , callback);
 	}, errorCB, successCB);
