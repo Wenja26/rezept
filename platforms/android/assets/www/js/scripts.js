@@ -3,7 +3,7 @@ document.addEventListener("deviceready", startApp, false);
 
 function startApp() {
 	// Verbindung zur Datenbank öffnen
-	alert('Opened App!');
+	console.log('Opened App!');
 	openDB();
 	
 	//alert('Opened App2!');
@@ -23,7 +23,7 @@ function startApp() {
 		
 	   
 	//onDeviceReady3();
-	alert('end');
+	console.log('end of startApp');
 }
 
 
@@ -54,12 +54,12 @@ function createDefaultData(){
 			if ( len >0 ) {
 			id = results.rows.item(0).RezeptID;
 			}
-	alert('id = ' + id);		
-	alert('length = ' + len);		
+	console.log('id = ' + id);		
+	console.log('length = ' + len);		
 	createZutat(id, 'Gulasch', '1', 'kg' );
 	createZubereitung(id, 'Fleisch etwas kleiner schneiden, mit den Gewürzen würzen und anbraten, in der Zwischenzeit Zwiebeln vierteln und mitbraten.', 'Schneiden');
 	createZubereitungsbild('Schneiden', 'css/img/schneiden.gif');
-	alert('Loaded Data!');
+	console.log('Loaded Data!');
 	
 		});	
 	
@@ -97,9 +97,13 @@ function ladeTagesrezepte() {
         else {
             $("#scroller").append('<li><h3>Kein Rezept angelegt</h3><p>Klicken Sie auf das Plus-Symbol oben rechts</p></li>');
         }
+<<<<<<< HEAD
 		//alert('test1');
         //$("#scroller").refresh();
 		//alert('test2');
+=======
+        //$("#scroller").refresh();
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 	});
 }
 

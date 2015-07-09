@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 document.addEventListener("deviceready", onDeviceReady2, false);
 
@@ -11,18 +12,40 @@ function onDeviceReady2() {
     var id;
     zeigeRezeptAn(id);
     fuegeZutatenInListviewEin(id);
+=======
+var urlParams;
+
+$(document).bind('pagebeforeshow',function(){
+    console.log('rezept.js pagebeforeshow triggered');
+    fuegeZutatenhinzu();
+    fuegeRezeptdetails();
+
+    parseUrlParams();
+
+    rezeptName = urlParams["rezeptName"];
+
+    console.log("Looking up "+rezeptName);
+
+    zeigeRezeptAn(rezeptName);
+    fuegeZutatenInListviewEin(rezeptName);
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
     $('#mehr').on('click', mengeErhoehen);
     $('#weniger').on('click', mengeSinken);
     $('#favorisieren').on('click', rezeptmerken);
 
+<<<<<<< HEAD
 }
 
+=======
+});
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 
 //id vom Aufruf
 var id;
 zeigeRezeptAn(id);
 
 function mengeErhoehen(){
+<<<<<<< HEAD
     readZutaten(id, function(tx, results) {
         $("#mengeListe").empty();
         var len = results.rows.length;
@@ -52,6 +75,11 @@ function mengeSinken(){
         }
         $("#mengeliste").listview('refresh');
     });
+=======
+
+}
+function mengeSinken(){
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 
 }
 function rezeptmerken(){
@@ -81,6 +109,17 @@ function fuegeRezeptdetails(){
 
 }
 
+<<<<<<< HEAD
+=======
+
+function fuegeZutatenhinzu(){
+    $("#mengeListe").empty();
+    $("#mengeListe").append('<li>1 kg Gulasch </li>');
+    $("#mengeListe").listview('refresh');
+}
+*/
+
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
@@ -108,5 +147,19 @@ function fuegeZutatenInListviewEin(id){
                 });
 }
 
+<<<<<<< HEAD
 
 */
+=======
+function parseUrlParams() {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+};
+>>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23

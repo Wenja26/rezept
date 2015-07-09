@@ -1,93 +1,91 @@
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\CordovaApp.ap_ \
- : C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-hdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-land-hdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-land-ldpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-land-mdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-land-xhdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-ldpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-mdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-port-hdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-port-ldpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-port-mdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-port-xhdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\drawable-xhdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\values\strings.xml \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\res\xml\config.xml \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-hdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-ldpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-mdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\_where-is-www.txt \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\cordova.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\cordova_plugins.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\index.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\merkzettel.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\New Text Document.txt \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\newrezept.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\rezept.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\suche.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\zubereitung.html \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\buttons.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\ios.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.mobile-1.3.1.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.mobile-1.4.5.min.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.simplyscroll.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.simplyscroll.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\jquery.simplyscroll.min.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\rezept.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\style.css \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images\ajax-loader.gif \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images\icons-18-black.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images\icons-18-white.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images\icons-36-black.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\images\icons-36-white.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\aufkochen.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\chili.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\cocktail.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\gnocchi.JPG \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\goulash.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\logo.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\rinderbraten.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\schneiden.gif \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\seelachs.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\sushi.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\um.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\umr.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\css\img\wuerzen.jpg \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images\icons-18-black.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images\icons-18-white.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images\icons-36-black.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\images\icons-36-white.png \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\db.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.min.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.min.map \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.map \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\merkzettel.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\newrezept.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept2.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\scripts.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\suche.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\zubereitung.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar\www \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar\www\statusbar.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\ant-build\AndroidManifest.xml \
+/home/jan/Dev/rezept/platforms/android/ant-build/CordovaApp.ap_ \
+ : /home/jan/Dev/rezept/platforms/android/res/xml/config.xml \
+/home/jan/Dev/rezept/platforms/android/res/drawable-port-xhdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-xhdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-land-ldpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-land-hdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-port-hdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-hdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-land-mdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-ldpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-mdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/res/values/strings.xml \
+/home/jan/Dev/rezept/platforms/android/res/drawable/icon.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-land-xhdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-port-mdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/res/drawable-port-ldpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable/icon.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
+/home/jan/Dev/rezept/platforms/android/assets/_where-is-www.txt \
+/home/jan/Dev/rezept/platforms/android/assets/www \
+/home/jan/Dev/rezept/platforms/android/assets/www/suche.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/cordova_plugins.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/newrezept.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/images \
+/home/jan/Dev/rezept/platforms/android/assets/www/merkzettel.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/zubereitung.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/css \
+/home/jan/Dev/rezept/platforms/android/assets/www/cordova.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/rezept.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/New Text Document.txt \
+/home/jan/Dev/rezept/platforms/android/assets/www/index.html \
+/home/jan/Dev/rezept/platforms/android/assets/www/plugins \
+/home/jan/Dev/rezept/platforms/android/assets/www/js \
+/home/jan/Dev/rezept/platforms/android/assets/www/images/icons-18-black.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/images/icons-18-white.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/images/icons-36-white.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/images/icons-36-black.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/style.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/jquery.simplyscroll.min.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/jquery.simplyscroll.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/ios.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/jquery.mobile-1.3.1.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/buttons.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/jquery.mobile-1.4.5.min.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/jquery.simplyscroll.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/rezept.css \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/seelachs.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/gnocchi.JPG \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/logo.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/goulash.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/cocktail.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/chili.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/rinderbraten.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/wuerzen.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/aufkochen.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/schneiden.gif \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/um.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/sushi.jpg \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/img/umr.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images/icons-18-black.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images/icons-18-white.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images/icons-36-white.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images/icons-36-black.png \
+/home/jan/Dev/rezept/platforms/android/assets/www/css/images/ajax-loader.gif \
+/home/jan/Dev/rezept/platforms/android/assets/www/plugins/org.apache.cordova.statusbar \
+/home/jan/Dev/rezept/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www \
+/home/jan/Dev/rezept/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www/statusbar.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/suche.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/rezept.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/db.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/jquery.mobile-1.4.5.min.map \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/jquery.min.map \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/jquery.mobile-1.4.5.min.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/merkzettel.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/zubereitung.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/jquery.min.js \
+/home/jan/Dev/rezept/platforms/android/assets/www/js/scripts.js \
+/home/jan/Dev/rezept/platforms/android/ant-build/AndroidManifest.xml \

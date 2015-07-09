@@ -1,9 +1,12 @@
-document.addEventListener("deviceready", onDeviceReady2, false);
 
+document.addEventListener("deviceready", onDeviceReady2, false);
 function onDeviceReady2() {
 
     alert('onDeviceReady von rezept.js ausgeführt');
+	/*
+=======
 
+>>>>>>> efc44603130fdae642469e8b106fe82a21a71d7e
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
@@ -15,7 +18,12 @@ function onDeviceReady2() {
     $('#favorisieren').on('click', rezeptmerken);
 
 }
+<<<<<<< HEAD
+/*
+// device APIs are available
+=======
 
+>>>>>>> efc44603130fdae642469e8b106fe82a21a71d7e
 
 //id vom Aufruf
 var id;
@@ -91,7 +99,12 @@ function fuegeZutatenhinzu(){
     $("#mengeListe").append('<li>1 kg Gulasch </li>');
     $("#mengeListe").listview('refresh');
 }
+<<<<<<< HEAD
+*/
+/*
+=======
 
+>>>>>>> efc44603130fdae642469e8b106fe82a21a71d7e
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
