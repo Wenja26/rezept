@@ -93,6 +93,9 @@ function deleteRezept(id, callback) {
 }
 
 
+
+
+
 function createZubereitung(rezeptID, details, art, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("INSERT INTO Zubereitungen (RezeptID, Details, Art) VALUES (?, ?, ?)", [rezeptID, details, art] , callback);

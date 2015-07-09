@@ -1,4 +1,4 @@
-document.addEventListener("deviceready", onDeviceReady2, false);
+document.addEventListener("deviceready2", onDeviceReady2, false);
 
 function onDeviceReady2() {
 

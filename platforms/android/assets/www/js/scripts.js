@@ -8,9 +8,9 @@ function startApp() {
 	
 	alert('Opened App2!');
 
-	createDefaultData();
+	//createDefaultData();
       sayHello();             
-	//ladeTagesrezepte()
+	ladeTagesrezepte()
 	//$(uebersicht).center();
 	
 		alert('end');
@@ -25,6 +25,21 @@ function sayHello(){
 
 function createDefaultData(){
 	var id;
+	
+	//alle vorher löschen
+	/*
+	readRezeptFromName("Gulasch", function(tx, results2) {
+			var len1 = results2.rows.length;
+			var id2;
+			if ( len1 >0 ) {
+				for (var i=0; i<len1; i++ ) {
+					id2 = results2.rows.item(i).RezeptID;
+					deleteRezept(id2);
+					}
+			}
+		});	
+		*/
+	
 	
 	createRezept("Gulasch", "css/img/goulash.jpg", function() {
 	
@@ -43,9 +58,11 @@ function createDefaultData(){
 		});	
 	
 	});
+	
+	
  }
  
- /*
+ 
 
 
 // Timestamp in Sekunden zurückliefern
@@ -84,4 +101,3 @@ jQuery.fn.center = function () {
     return this;
 }
 
-*/
