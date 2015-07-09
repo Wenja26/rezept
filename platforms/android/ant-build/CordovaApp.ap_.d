@@ -83,6 +83,7 @@ C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\andro
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\merkzettel.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\newrezept.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept.js \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept2.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\scripts.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\suche.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\zubereitung.js \
