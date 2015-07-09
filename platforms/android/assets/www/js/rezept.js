@@ -1,22 +1,10 @@
-<<<<<<< HEAD
-/*
-document.addEventListener("deviceready", onDeviceReady2, false);
-
-function onDeviceReady2() {
-
-    alert('onDeviceReady von rezept.js ausgeführt');
-
-    fuegeZutatenhinzu();
-    fuegeRezeptdetails();
-
-    var id;
-    zeigeRezeptAn(id);
-    fuegeZutatenInListviewEin(id);
-=======
 var urlParams;
 
 $(document).bind('pagebeforeshow',function(){
     console.log('rezept.js pagebeforeshow triggered');
+
+    openDB();
+
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
 
@@ -28,34 +16,26 @@ $(document).bind('pagebeforeshow',function(){
 
     zeigeRezeptAn(rezeptName);
     fuegeZutatenInListviewEin(rezeptName);
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
     $('#mehr').on('click', mengeErhoehen);
     $('#weniger').on('click', mengeSinken);
     $('#favorisieren').on('click', rezeptmerken);
-
-<<<<<<< HEAD
-}
-
-=======
 });
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 
 //id vom Aufruf
 var id;
 zeigeRezeptAn(id);
 
 function mengeErhoehen(){
-<<<<<<< HEAD
     readZutaten(id, function(tx, results) {
         $("#mengeListe").empty();
         var len = results.rows.length;
         if ( len > 0 ) {
             for (var i = 0; i < len; i++) {
                 var mengeNeu = results.rows.item(i).Menge * 2;
-                $("#mengeliste").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                $("#mengeListe").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
             }
         } else{
-            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
+            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
         }
         $("#mengeliste").listview('refresh');
     });
@@ -68,18 +48,13 @@ function mengeSinken(){
         if ( len > 0 ) {
             for (var i = 0; i < len; i++) {
                 var mengeNeu = results.rows.item(i).Menge / 2;
-                $("#mengeliste").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+                $("#mengeListe").append('<li>' + mengeNeu + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
             }
         } else{
-            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
+            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
         }
         $("#mengeliste").listview('refresh');
     });
-=======
-
-}
-function mengeSinken(){
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 
 }
 function rezeptmerken(){
@@ -97,29 +72,25 @@ function fuegeZutatenhinzu(){
 
 
 function fuegeRezeptdetails(){
-   // $('#rezeptimage').show();
-    $('#rezeptimage').attr('src', 'css/img/goulash.jpg');
-	$('#rezeptimage').show();
+    $('#rezeptbild').show();
+    $('#rezeptbild').attr('src', 'css/img/goulash.jpg');
+    $('#rezeptbild').show();
     $('#rezeptname').text('Gulasch');
 }
 
-
-
-
-
+function fuegeRezeptdetails(){
+    $('#image').show();
+    $('#image').attr('src', "css/img/goulash.jpg");
+    $('#rezeptname').text('Gulasch');
 }
 
-<<<<<<< HEAD
-=======
 
 function fuegeZutatenhinzu(){
     $("#mengeListe").empty();
     $("#mengeListe").append('<li>1 kg Gulasch </li>');
     $("#mengeListe").listview('refresh');
 }
-*/
 
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
 // Projekt anzeigen
 function zeigeRezeptAn(rezeptname) {
     readRezept(rezeptname, function(tx, results) {
@@ -134,23 +105,19 @@ function zeigeRezeptAn(rezeptname) {
 
 function fuegeZutatenInListviewEin(id){
     readZutaten(id, function(tx, results) {
-                    $("#mengeliste").empty();
-                    var len = results.rows.length;
-                    if ( len > 0 ) {
-                        for (var i = 0; i < len; i++) {
-                            $("#mengeliste").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
-                        }
-                    } else{
-                            $("#mengeliste").append('<li>Zutaten leider nicht bekannt</li>');
-                    }
-                    $("#mengeliste").listview('refresh');
-                });
+        $("#mengeListe").empty();
+        var len = results.rows.length;
+        if ( len > 0 ) {
+            for (var i = 0; i < len; i++) {
+                $("#mengeListe").append('<li>' + results.rows.item(i).Menge + ' ' + results.rows.item(i).Mengeneinheit + ' ' + results.rows.item(i).Name + '</li>');
+            }
+        } else{
+            $("#mengeListe").append('<li>Zutaten leider nicht bekannt</li>');
+        }
+        $("#mengeliste").listview('refresh');
+    });
 }
 
-<<<<<<< HEAD
-
-*/
-=======
 function parseUrlParams() {
     var match,
         pl     = /\+/g,  // Regex for replacing addition symbol with a space
@@ -160,6 +127,5 @@ function parseUrlParams() {
 
     urlParams = {};
     while (match = search.exec(query))
-       urlParams[decode(match[1])] = decode(match[2]);
+        urlParams[decode(match[1])] = decode(match[2]);
 };
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23

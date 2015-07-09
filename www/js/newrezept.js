@@ -25,13 +25,19 @@ function fuegeZutatHinzu(){
     mengen.push(menge);
     mengeneinheiten.push(mengeneinheit);
 
+    fuegeZutatinListview(zutat, menge, einheit);
+
 
 }
 
 function entferneZutat(){
+    $('#zutatID'+zutaten.length).remove();
+
     zutaten.pop();
     mengen.pop();
     mengeneinheit.pop();
+
+
 
 }
 
@@ -43,12 +49,15 @@ function fuegeArbeitsschrittHinzu(){
     arbeitsschritte.push(arbeitsschritt);
     arbeitsarten.push(arbeitsart);
 
+    fuegeArbeitsschrittinListview(arbeitsschritt, arbeitsart);
 
 }
 
 function entferneArbeitsschritt() {
-
+    $('#arbeitsschritt'+arbeitsschritte.length).remove();
     arbeitsschritte.pop();
+    arbeitsart.pop();
+
 }
 
 
@@ -97,10 +106,18 @@ function legeRezeptAn() {
 }
 
 
-fuegeArbeitsschrittinListview(arbeitsschritte, arbeitsarten){
+function fuegeArbeitsschrittinListview(arbeitsschritt, arbeitsart){
+    $("#newArbeitsliste").empty();
+    $("#newArbeitsliste").append('<div data-role="fieldcontain"><label id="arbeitsschritt'+arbeitsschritte.length+ '">'+arbeitsschritt+'</label><label id="arbeitsart">'+arbeitsart+'</label></div>');
 
-    $("#autocompleteRezeptSuche").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="'+ results.rows.item(i).Bild  +'"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+    $("#newArbeitsliste").listview('refresh');
 
-    $("#autocompleteRezeptSuche").listview('refresh');
+}
+
+
+function fuegeZutatinListview(zutat, menge, einheit){
+    $("#newZutatenliste").empty();
+    $("#newZutatenliste").append('<div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-c"><label id="zutatmengeeinheit">'+einheit+'</label></div></div>');
+    $("#newZutatenliste").listview('refresh');
 
 }

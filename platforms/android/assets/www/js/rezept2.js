@@ -2,6 +2,7 @@
 rezept2.js
 
 */
+/*
 function sayHello(){
 			alert('Opened App2.5 Hello');
 }
@@ -93,3 +94,5 @@ function fuegeZutatenInListviewEin(id){
                     $("#mengeiste").listview('refresh');
                 });
 }
+
+*/

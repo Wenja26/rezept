@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eae3fa4-47db-4c0c-9adb-d8a560d71076" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/db.js" afterPath="$PROJECT_DIR$/www/js/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/merkzettel.html" afterPath="$PROJECT_DIR$/www/merkzettel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/merkzettel.js" afterPath="$PROJECT_DIR$/www/js/merkzettel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/newrezept.html" afterPath="$PROJECT_DIR$/www/newrezept.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/rezept.html" afterPath="$PROJECT_DIR$/www/rezept.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/rezept.js" afterPath="$PROJECT_DIR$/www/js/rezept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/rezept2.js" afterPath="$PROJECT_DIR$/www/js/rezept2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/scripts.js" afterPath="$PROJECT_DIR$/www/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/suche.html" afterPath="$PROJECT_DIR$/www/suche.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/zubereitung.html" afterPath="$PROJECT_DIR$/www/zubereitung.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/zubereitung.js" afterPath="$PROJECT_DIR$/www/js/zubereitung.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/newrezept.js" afterPath="$PROJECT_DIR$/www/js/newrezept.js" />
     </list>
     <ignored path="rezept.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zubereitung.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zubereitung.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/zubereitung.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61218834" vertical-offset="0" max-vertical-offset="722">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <marker date="1436475058546" expanded="false" signature="650:685" placeholder="..." />
               </folding>
@@ -104,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newrezept.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="newrezept.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/newrezept.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.25900277" vertical-offset="0" max-vertical-offset="2176">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -117,8 +104,8 @@
       <file leaf-file-name="newrezept.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/newrezept.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.153847" vertical-offset="1229" max-vertical-offset="2057">
-              <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+            <state vertical-scroll-proportion="-17.038462" vertical-offset="305" max-vertical-offset="2057">
+              <caret line="44" column="22" selection-start-line="34" selection-start-column="16" selection-end-line="44" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -169,13 +156,13 @@
         <option value="$PROJECT_DIR$/www/js/rezept2.js" />
         <option value="$PROJECT_DIR$/www/js/db.js" />
         <option value="$PROJECT_DIR$/www/newrezept.html" />
-        <option value="$PROJECT_DIR$/www/js/newrezept.js" />
         <option value="$PROJECT_DIR$/www/merkzettel.html" />
         <option value="$PROJECT_DIR$/www/js/merkzettel.js" />
         <option value="$PROJECT_DIR$/www/rezept.html" />
         <option value="$PROJECT_DIR$/www/zubereitung.html" />
         <option value="$PROJECT_DIR$/www/js/rezept.js" />
         <option value="$PROJECT_DIR$/www/js/zubereitung.js" />
+        <option value="$PROJECT_DIR$/www/js/newrezept.js" />
       </list>
     </option>
   </component>
@@ -808,14 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/newrezept.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.153847" vertical-offset="1229" max-vertical-offset="2057">
-          <caret line="97" column="18" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/suche.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="918">
@@ -830,14 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.769231" vertical-offset="287" max-vertical-offset="1292">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/newrezept.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -895,11 +866,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/zubereitung.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61218834" vertical-offset="0" max-vertical-offset="722">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <marker date="1436475058546" expanded="false" signature="650:685" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/newrezept.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.038462" vertical-offset="305" max-vertical-offset="2057">
+          <caret line="44" column="22" selection-start-line="34" selection-start-column="16" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/newrezept.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25900277" vertical-offset="0" max-vertical-offset="2176">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

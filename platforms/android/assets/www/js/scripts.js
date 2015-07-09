@@ -17,7 +17,7 @@ function startApp() {
 	
 	$(document).on('click', '#scroller a', function() {
 		alert('clicked rezept');
-			initRezept(this);
+		//	initRezept(this);
 	});
 	
 		
@@ -97,13 +97,10 @@ function ladeTagesrezepte() {
         else {
             $("#scroller").append('<li><h3>Kein Rezept angelegt</h3><p>Klicken Sie auf das Plus-Symbol oben rechts</p></li>');
         }
-<<<<<<< HEAD
-		//alert('test1');
         //$("#scroller").refresh();
+
 		//alert('test2');
-=======
-        //$("#scroller").refresh();
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
+
 	});
 }
 

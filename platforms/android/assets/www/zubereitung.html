@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rezeptapp</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" href="css/ios.css" />
-        <link rel="stylesheet" href="css/rezept.css" />
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
-         <script src="js/scripts.js" charset="utf-8"></script>
-		<script src="js/db.js" charset="utf-8"></script>
-		<script src="js/rezept.js" charset="utf-8"></script>
-		<script src="js/rezept2.js" charset="utf-8"></script>
-        
-    </head>
-    <body>
-        
-        <div data-role="page" id="uebersicht">
-            <div data-role="header">
-<<<<<<< HEAD
-                <a data-role="button" data-rel="back"  data-icon="carat-l" data-iconpos="notext"></a>
-=======
-                <a data-role="button" href="rezept.html", data-icon="carat-l" data-iconpos="notext"></a>
->>>>>>> dc0d472aa8f8bdac647f6da15f3fdb4dc359df23
-                <h1>Zubereitung</h1>
-            </div>
-            
-            <div role="main" class="ui-content">
-                
-                <ul data-role="listview" id="zubereitungsliste">
-                    <!-- standardmäßig angezeigt, wenn die Datenbankabfrage nicht erfolgreiche war-->
-                    <li>
-                        <img src="css/img/schneiden.gif" align="middle">
-                        <font style="white-space:normal; font-size:small">Fleisch etwas kleiner schneiden, mit den Gewürzen würzen und anbraten, in der Zwischenzeit Zwiebeln vierteln und mitbraten.</font>
-                    <li>
-                    <li>
-                        <img src="css/img/um.png" align="middle">
-                        <font style="white-space:normal; font-size:small">Dose Tomatenmark einrühren und mit den passierten Tomaten ablöschen. Herdplatte auf niedrige Temperatur stellen und schmoren lassen (ca. 2 Stunden).</font>
-                    <li>
-                    <li>
-                        <img src="css/img/umr.png" align="middle">
-                        <font style="white-space:normal; font-size:small">Ab und zu umrühren und immer nur etwas Wasser zugeben, sodass es noch sämig bleibt.</font>
-                    <li>
-                    <li>
-                        <img src="css/img/wuerzen.jpg" align="middle">
-                        <font style="white-space:normal; font-size:small">Ca. eine halbe Stunde vor Ende noch mal kräftig würzen, nicht sparsam sein. Falls die Soße zu dünn sein sollte, einfach ein wenig andicken.</font>
-                    <li>
-                    <li>
-                        <img src="css/img/aufkochen.jpg" align="middle">
-                        <font style="white-space:normal; font-size:small">Dafür gesiebtes Mehl mit etwas Wasser glatt rühren und unter Rühren in die Soße laufen lassen, dann aufkochen. Oder mit einer dunklen Mehlschwitze.</font>
-                    <li>
-                        
-                                                                                
-                </ul>
-                
-            </div>
-                    
-                    
-                    
-                    <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
-                        <div data-role="navbar">
-                            <ul>
-                                <li><a href="index.html" data-icon="home">Home</a></li>
-                                <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
-                                <li><a href="suche.html" data-icon="search">Suche</a></li>
-                            </ul>
-                        </div><!-- /navbar -->
-                    </div><!-- /footer -->
-                </div>
-                
-                
-                </body>
+<head>
+    <title>Rezeptapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/ios.css" />
+    <link rel="stylesheet" href="css/rezept.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <script src="js/db.js" charset="UTF-8"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="uebersicht">
+    <div data-role="header">
+        <a data-role="button" data-rel="back"  data-icon="carat-l" data-iconpos="notext"></a>
+        <h1>Zubereitung</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <ul data-role="listview" id="zubereitungsliste">
+            <!-- standardmäßig angezeigt, wenn die Datenbankabfrage nicht erfolgreiche war-->
+            <li>
+                <img src="css/img/schneiden.gif" align="middle">
+                <font style="white-space:normal; font-size:small">Fleisch etwas kleiner schneiden, mit den Gewürzen würzen und anbraten, in der Zwischenzeit Zwiebeln vierteln und mitbraten.</font>
+            <li>
+            <li>
+                <img src="css/img/um.png" align="middle">
+                <font style="white-space:normal; font-size:small">Dose Tomatenmark einrühren und mit den passierten Tomaten ablöschen. Herdplatte auf niedrige Temperatur stellen und schmoren lassen (ca. 2 Stunden).</font>
+            <li>
+            <li>
+                <img src="css/img/umr.png" align="middle">
+                <font style="white-space:normal; font-size:small">Ab und zu umrühren und immer nur etwas Wasser zugeben, sodass es noch sämig bleibt.</font>
+            <li>
+            <li>
+                <img src="css/img/wuerzen.jpg" align="middle">
+                <font style="white-space:normal; font-size:small">Ca. eine halbe Stunde vor Ende noch mal kräftig würzen, nicht sparsam sein. Falls die Soße zu dünn sein sollte, einfach ein wenig andicken.</font>
+            <li>
+            <li>
+                <img src="css/img/aufkochen.jpg" align="middle">
+                <font style="white-space:normal; font-size:small">Dafür gesiebtes Mehl mit etwas Wasser glatt rühren und unter Rühren in die Soße laufen lassen, dann aufkochen. Oder mit einer dunklen Mehlschwitze.</font>
+            <li>
+
+
+        </ul>
+
+    </div>
+
+
+
+    <div data-role="footer" data-position="fixed" style="text-align:center;" data-tap-toggle="false">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">Home</a></li>
+                <li><a href="merkzettel.html" data-icon="star">Merkzettel</a></li>
+                <li><a href="suche.html" data-icon="search">Suche</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+</div>
+
+
+</body>
 </html>
