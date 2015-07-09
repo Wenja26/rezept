@@ -16,22 +16,61 @@ function suche() {
 
     if (sucheAnhand == 1) {
 
-        readRezeptFromName(name, function (tx, results) {
 
-            $("#rezeptSucheListe").empty();
-            var len = results.rows.length;
-            if (len > 0) {
-                for (var i = 0; i < len; i++) {
-                    $("#rezeptSucheListe").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="' + results.rows.item(i).Bild + '"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+        if(suchefilter==1) {
+
+            readRezeptFromName(name, function (tx, results) {
+
+                $("#rezeptSucheListe").empty();
+                var len = results.rows.length;
+                if (len > 0) {
+                    for (var i = 0; i < len; i++) {
+                        $("#rezeptSucheListe").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="' + results.rows.item(i).Bild + '"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+                    }
                 }
-            }
-            else {
-                $("#rezeptSucheListe").append('<li><h3>Kein Rezept gefunden</h3></li>');
-            }
-            $("#rezeptSucheListe").listview('refresh');
+                else {
+                    $("#rezeptSucheListe").append('<li><h3>Kein Rezept gefunden</h3></li>');
+                }
+                $("#rezeptSucheListe").listview('refresh');
 
 
-        });
+            });
+        } else if(suchefilter==2){
+            readRezeptFromNameVegetarisch(name, function (tx, results) {
+
+                $("#rezeptSucheListe").empty();
+                var len = results.rows.length;
+                if (len > 0) {
+                    for (var i = 0; i < len; i++) {
+                        $("#rezeptSucheListe").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="' + results.rows.item(i).Bild + '"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+                    }
+                }
+                else {
+                    $("#rezeptSucheListe").append('<li><h3>Kein Rezept gefunden</h3></li>');
+                }
+                $("#rezeptSucheListe").listview('refresh');
+
+
+            });
+        } else{
+            readRezeptFromNameVegan(name, function (tx, results) {
+
+                $("#rezeptSucheListe").empty();
+                var len = results.rows.length;
+                if (len > 0) {
+                    for (var i = 0; i < len; i++) {
+                        $("#rezeptSucheListe").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '" data-transition="slide">  <img src="' + results.rows.item(i).Bild + '"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
+                    }
+                }
+                else {
+                    $("#rezeptSucheListe").append('<li><h3>Kein Rezept gefunden</h3></li>');
+                }
+                $("#rezeptSucheListe").listview('refresh');
+
+
+            });
+
+        }
 
     }
     else{

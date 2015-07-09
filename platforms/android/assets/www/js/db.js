@@ -10,7 +10,7 @@ function openDB() {
 
 
 function createTables(tx) {
-	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT NOT NULL, Bild TEXT)");
+	tx.executeSql("CREATE TABLE IF NOT EXISTS Rezepte (RezeptID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Name TEXT NOT NULL, Bild TEXT, Vegetarisch BOOLEAN, Vegan BOOLEAN)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Merkliste (RezeptID INTEGER NOT NULL)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zubereitungen (ZubereitungID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Details TEXT, Art TEXT)");
 	tx.executeSql("CREATE TABLE IF NOT EXISTS Zutaten (ZutatID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, RezeptID INTEGER NOT NULL, Name TEXT, Menge INTEGER, Mengeneinheit TEXT)");
@@ -62,10 +62,29 @@ function readRezeptFromID(id, callback) {
 
 
 function readRezeptFromName(name, callback) {
-	db.transaction(function(tx) {
-		tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
-	}, errorCB, successCB);
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
+    }, errorCB, successCB);
 }
+
+function readRezeptFromNameFilter(name, vegetarisch, vegan, callback) {
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ? AND p.Vegetarisch = ? AND p.Vegan = ?", [name, vegetarisch, vegan], callback);
+    }, errorCB, successCB);
+}
+
+function readRezeptFromNameVegetarisch(name, callback) {
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ? AND p.Vegetarisch = ?", [name, true], callback);
+    }, errorCB, successCB);
+}
+
+function readRezeptFromNameVegan(name, callback) {
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ? AND p.Vegan = ?", [name, true], callback);
+    }, errorCB, successCB);
+}
+
 
 function readRezept(name, callback) {
 	db.transaction(function(tx) {

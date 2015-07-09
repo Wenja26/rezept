@@ -5,6 +5,8 @@ var mengeneinheiten = [];
 var arbeitsschritte = [];
 var arbeitsarten = [];
 
+var bild;
+
 $(document).bind('pagebeforeshow',function() {
     openDB();
     $('#buttonZutat').on('click',fuegeZutatHinzu);
@@ -12,6 +14,7 @@ $(document).bind('pagebeforeshow',function() {
     $('#buttonArbeitsschrittHinzufuegen').on('click',fuegeArbeitsschrittHinzu);
     $('#buttonArbeitsschrittLoeschen').on('click',entferneArbeitsschritt);
     $('#buttonRezeptSpeichern').on('click',legeRezeptAn);
+    $('#buttonBild').on('click',ladeBild);
 });
 
 <!--
@@ -68,6 +71,7 @@ function fuegeZutatHinzu(){
     mengen.push(menge);
     mengeneinheiten.push(mengeneinheit);
 
+
     fuegeZutatinListview(zutat, menge, einheit);
 
 
@@ -106,7 +110,7 @@ function fuegeArbeitsschrittHinzu(){
             arbeitsart = "Ruehren"
             break;
         case 5:
-            arbeitsart = "Wurzen"
+            arbeitsart = "Wuerzen"
             break;
         default:
             arbeitsart = "Keine Kategorie"
@@ -144,7 +148,8 @@ function legeRezeptAn() {
 		return;
 	}
 	
-	var bild="css/img/goulash.jpg";
+	//var bild="css/img/goulash.jpg";
+   // var bild  = ladeBild();
 	
 	createRezept(name, bild, function() {
 	//	fuegeProjekteInListviewEin();
@@ -158,7 +163,19 @@ function legeRezeptAn() {
                 if ( len > 0 ) {
 				id = results.rows.item(0).RezeptID;
 				}
+
+        for (var i=0; i<zutaten.length; i++ ) {
+            createZutat(id, zutaten[i], mengen[i], mengeneinheiten[i]);
+
+        }
+        for (var i=0; i<arbeitsschritte.length; i++ ) {
+            createZubereitung(id, arbeitsschritte[i], arbeitsarten[i]);
+        }
 	});
+
+
+
+
     /*
 	 $("#zutatID").each(function (i) {
          i.attr
@@ -194,4 +211,26 @@ function fuegeZutatinListview(zutat, menge, einheit){
     $("#newZutatenliste").append('<li><div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-d"><label id="zutatmengeeinheit">'+einheit+'</label></div></div></li>');
     $("#newZutatenliste").listview('refresh');
 
+}
+
+function ladeBild(){
+    navigator.camera.getPicture(onSuccess, onFail, {
+        quality: 50,
+        destinationType: Camera.DestinationType.NATIVE_URI,
+        sourceType: Camera.PictureSourceType.PHOTOLIBRARY
+    });
+}
+
+
+function onSuccess(imageURI) {
+    /*
+    $('#image').show();
+    $('#image').attr('src',imageURI);
+    $('#camera').hide();
+    */
+    bild =imageURI;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
 }
