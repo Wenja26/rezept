@@ -34,7 +34,6 @@ function suche() {
         });
 
     }
-
     else{
 
     }

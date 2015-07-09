@@ -1,6 +1,6 @@
 var zutaten = [];
 var mengen = [];
-var mengeneinheit = [];
+var mengeneinheiten = [];
 
 var arbeitsschritte = [];
 var arbeitsarten = [];
@@ -30,6 +30,8 @@ function fuegeZutatHinzu(){
     var zutat = $('#zutatText').val();
     var menge = $('#mengeText').val();
     var mengeneinheitNummer =  $('#selectEinheit').val();
+
+    var mengeneinheit;
 
     switch(mengeneinheitNummer) {
         case 1:
@@ -189,7 +191,7 @@ function fuegeArbeitsschrittinListview(arbeitsschritt, arbeitsart){
 
 function fuegeZutatinListview(zutat, menge, einheit){
     $("#newZutatenliste").empty();
-    $("#newZutatenliste").append('<li><div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-c"><label id="zutatmengeeinheit">'+einheit+'</label></div></div></li>');
+    $("#newZutatenliste").append('<li><div data-role="fieldcontain" class="ui-grid-a" id="zutatID'+zutaten.length+'"><div class="ui-block-b"><label id="zutat">'+zutat+'</label></div><div class="ui-block-c"><label id="zutatmenge">'+menge+'</label></div><div class="ui-block-d"><label id="zutatmengeeinheit">'+einheit+'</label></div></div></li>');
     $("#newZutatenliste").listview('refresh');
 
 }
