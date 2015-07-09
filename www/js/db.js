@@ -36,7 +36,7 @@ function createRezept(name, bild, callback) {
 	}, errorCB, successCB);
 }
 
-/*
+
 
 
 function updateRezept(id, name, bild, callback) {
@@ -53,7 +53,7 @@ function readRezepte(callback) {
 
 
 
-function readRezept(id, callback) {
+function readRezeptFromID(id, callback) {
 	db.transaction(function(tx) {
 		tx.executeSql("SELECT * FROM Rezepte p WHERE p.RezeptID = ?", [id], callback);
 	}, errorCB, successCB);
@@ -61,13 +61,12 @@ function readRezept(id, callback) {
 
 
 
-function readRezept(name, callback) {
+function readRezeptFromName(name, callback) {
 	db.transaction(function(tx) {
-		tx.executeSql("SELECT * FROM Rezepte p
-						WHERE p.Name = ?", [name], callback);
+		tx.executeSql("SELECT * FROM Rezepte p WHERE p.Name = ?", [name], callback);
 	}, errorCB, successCB);
 }
-
+/*
 /**
 function readRezept(name, callback) {
 	db.transaction(function(tx) {
@@ -78,7 +77,7 @@ function readRezept(name, callback) {
 						GROUP BY p.ID, p.Name", [name], callback);
 	}, errorCB, successCB);
 }
-*/
+
 
 function getIDofRezept(name, callback) {
 	db.transaction(function(tx) {
