@@ -1,13 +1,38 @@
 
-
 $( document ).ready(function() {
 
+	
     fuegeZutatenhinzu();
     fuegeRezeptdetails();
                     
 });
+// device APIs are available
 
 var rezeptID;
+
+
+function fuegeZutatenhinzu(){
+alert('Opened App3!');
+
+    $('#mengeliste').empty();
+    $('#mengeliste').append('<li>1 kg Gulasch</li>');
+	$("#mengeliste").append('<li><h3>Kein Projekt angelegt</h3><p>Klicken Sie auf das Plus-Symbol oben rechts</p></li>');
+    $('#mengeliste').listview('refresh');
+		alert('Loaded Data2!');
+}
+
+
+function fuegeRezeptdetails(){
+    $('#rezeptbild').show();
+    $('#rezeptbild').attr('src', "css/img/goulash.jpg");
+	$('#rezeptbild').show();
+    $('#rezeptname').text('Gulasch');
+		alert('Loaded Data3!');
+}
+
+
+
+/*
 
 
 function fuegeRezeptdetails(){
@@ -22,6 +47,7 @@ function fuegeZutatenhinzu(){
     $("#mengeListe").append('<li>1 kg Gulasch </li>');
     $("#mengeListe").listview('refresh');
 }
+*/
 
 // Projekt anzeigen
 function zeigeRezeptAn(rezept) {
@@ -34,7 +60,7 @@ function zeigeRezeptAn(rezept) {
 
 }
 
-function fuegeZutatenInListviewEin(){
+function fuegeZutatenInListviewEin(id){
     readZutaten(id, function(tx, results) {
                     $("#mengeListe").empty();
                     var len = results.rows.length;

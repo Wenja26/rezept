@@ -37,7 +37,7 @@ function fuegeRezepteInListviewEin() {
                 var len = results.rows.length;
                 if ( len > 0 ) {
 					for (var i=0; i<len; i++ ) {
-						$("#autocompleteRezeptSuche").append('<li><a href="#projekt" data-projektid="' + results.rows.item(i).ID + '" data-transition="slide">' + results.rows.item(i).Name + '<p>Dauer: ' + results.rows.item(i).Dauer + '</p></a></li>');
+						$("#autocompleteRezeptSuche").append('<li><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '"						data-transition="slide">  <img src="'+ results.rows.item(i).Bild  +'"><h2>' + results.rows.item(i).Name + '</h2></a></li>');
 					}
                 }
                 else {

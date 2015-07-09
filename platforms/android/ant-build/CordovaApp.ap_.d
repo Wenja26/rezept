@@ -77,10 +77,12 @@ C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\andro
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\db.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.min.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\jquery.mobile-1.4.5.min.js \
-C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\Ohne Titel.rtf \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\merkzettel.js \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\newrezept.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\rezept.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\scripts.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\suche.js \
+C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\js\zubereitung.js \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar\www \
 C:\Users\D059264\Documents\Studium\Semester 6\App-Projekt\rezept\platforms\android\assets\www\plugins\org.apache.cordova.statusbar\www\statusbar.js \
