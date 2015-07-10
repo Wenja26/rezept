@@ -87,17 +87,19 @@ function ladeTagesrezepte() {
 	readRezepte(function(tx, results) {
         $("#scroller").empty();
         var len = results.rows.length;
-		var random= 0;	
-	//alert('length = ' + len);
+        //alert('length = ' + len);
 	//data-rezeptid="' + results.rows.item(i).RezeptID + '"
         if ( len > 0 ) {
+            var random= Math.floor(Math.random() * len) + 0  ;
             for (var i=0; i<len; i++ ) {
-			/*
-				alert('results.rows.item(i).Name = ' + results.rows.item(i).Name);
-				alert('results.rows.item(i).RezeptID = ' + results.rows.item(i).RezeptID);	
-				alert('results.rows.item(i).Bild = ' + results.rows.item(i).Bild);
-*/				
-                $("#scroller").append('<div class="section"><div class="hp-highlight" style="background:url(' + results.rows.item(i).Bild + ') no-repeat 0 0"><div class="feature-headline"><h1><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '">'+results.rows.item(i).Name+'</a></h1></div></div></div>');            	
+                /*
+                 alert('results.rows.item(i).Name = ' + results.rows.item(i).Name);
+                 alert('results.rows.item(i).RezeptID = ' + results.rows.item(i).RezeptID);
+                 alert('results.rows.item(i).Bild = ' + results.rows.item(i).Bild);
+                 */
+                if (len & random == 0) {
+                    $("#scroller").append('<div class="section"><div class="hp-highlight" style="background:url(' + results.rows.item(i).Bild + ') no-repeat 0 0"><div class="feature-headline"><h1><a href="rezept.html" data-rezeptid="' + results.rows.item(i).RezeptID + '">' + results.rows.item(i).Name + '</a></h1></div></div></div>');
+                }
             }
         }
         else {
